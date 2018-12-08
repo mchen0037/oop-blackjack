@@ -1,0 +1,329 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1727D28C219145520048CB99 /* GlutApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1727D28A219145520048CB99 /* GlutApp.cpp */; settings = {COMPILER_FLAGS = "-w"; }; };
+		173FEF0C1AA63AC4006CCB85 /* app_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 173FEF0B1AA63AC4006CCB85 /* app_main.cpp */; settings = {COMPILER_FLAGS = "-w"; }; };
+		173FEF161AA63B1B006CCB85 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 173FEF151AA63B1B006CCB85 /* OpenGL.framework */; };
+		173FEF181AA63B22006CCB85 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 173FEF171AA63B22006CCB85 /* GLUT.framework */; };
+		17609DB8219BF07300F85383 /* App.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 17609DB6219BF07300F85383 /* App.cpp */; };
+		17609DBC219C077D00F85383 /* libSOIL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 17609DBB219C077D00F85383 /* libSOIL.a */; };
+		17609DC2219C098400F85383 /* Rect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 17609DC0219C098400F85383 /* Rect.cpp */; settings = {COMPILER_FLAGS = "-w"; }; };
+		17609DC5219C0DE800F85383 /* TexRect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 17609DC3219C0DE800F85383 /* TexRect.cpp */; settings = {COMPILER_FLAGS = "-w"; }; };
+		17609DC7219C7B5700F85383 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17609DC6219C7B5700F85383 /* CoreFoundation.framework */; };
+		17609DCB219C9C3E00F85383 /* AnimatedRect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 17609DC9219C9C3E00F85383 /* AnimatedRect.cpp */; settings = {COMPILER_FLAGS = "-w"; }; };
+		17609DCE219CA02D00F85383 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 17609DCC219CA02D00F85383 /* Timer.cpp */; settings = {COMPILER_FLAGS = "-w"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		173FEEFF1AA63A07006CCB85 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1727D28A219145520048CB99 /* GlutApp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GlutApp.cpp; sourceTree = "<group>"; };
+		1727D28B219145520048CB99 /* GlutApp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlutApp.h; sourceTree = "<group>"; };
+		173FEF011AA63A07006CCB85 /* glutapp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = glutapp; sourceTree = BUILT_PRODUCTS_DIR; };
+		173FEF0B1AA63AC4006CCB85 /* app_main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = app_main.cpp; sourceTree = "<group>"; };
+		173FEF151AA63B1B006CCB85 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		173FEF171AA63B22006CCB85 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		17609DB6219BF07300F85383 /* App.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = App.cpp; sourceTree = "<group>"; };
+		17609DB7219BF07300F85383 /* App.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = App.h; sourceTree = "<group>"; };
+		17609DBB219C077D00F85383 /* libSOIL.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSOIL.a; path = SOIL/lib/macOS/libSOIL.a; sourceTree = "<group>"; };
+		17609DC0219C098400F85383 /* Rect.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Rect.cpp; sourceTree = "<group>"; };
+		17609DC1219C098400F85383 /* Rect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Rect.h; sourceTree = "<group>"; };
+		17609DC3219C0DE800F85383 /* TexRect.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TexRect.cpp; sourceTree = "<group>"; };
+		17609DC4219C0DE800F85383 /* TexRect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TexRect.h; sourceTree = "<group>"; };
+		17609DC6219C7B5700F85383 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		17609DC9219C9C3E00F85383 /* AnimatedRect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AnimatedRect.cpp; sourceTree = "<group>"; };
+		17609DCA219C9C3E00F85383 /* AnimatedRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimatedRect.h; sourceTree = "<group>"; };
+		17609DCC219CA02D00F85383 /* Timer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Timer.cpp; sourceTree = "<group>"; };
+		17609DCD219CA02D00F85383 /* Timer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Timer.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		173FEEFE1AA63A07006CCB85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17609DC7219C7B5700F85383 /* CoreFoundation.framework in Frameworks */,
+				17609DBC219C077D00F85383 /* libSOIL.a in Frameworks */,
+				173FEF181AA63B22006CCB85 /* GLUT.framework in Frameworks */,
+				173FEF161AA63B1B006CCB85 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		173FEEF81AA63A07006CCB85 = {
+			isa = PBXGroup;
+			children = (
+				173FEF171AA63B22006CCB85 /* GLUT.framework */,
+				173FEF151AA63B1B006CCB85 /* OpenGL.framework */,
+				173FEF0B1AA63AC4006CCB85 /* app_main.cpp */,
+				17609DB7219BF07300F85383 /* App.h */,
+				17609DB6219BF07300F85383 /* App.cpp */,
+				1727D28B219145520048CB99 /* GlutApp.h */,
+				1727D28A219145520048CB99 /* GlutApp.cpp */,
+				17609DCD219CA02D00F85383 /* Timer.h */,
+				17609DCC219CA02D00F85383 /* Timer.cpp */,
+				17609DC9219C9C3E00F85383 /* AnimatedRect.cpp */,
+				17609DCA219C9C3E00F85383 /* AnimatedRect.h */,
+				17609DC1219C098400F85383 /* Rect.h */,
+				17609DC0219C098400F85383 /* Rect.cpp */,
+				17609DC4219C0DE800F85383 /* TexRect.h */,
+				17609DC3219C0DE800F85383 /* TexRect.cpp */,
+				173FEF021AA63A07006CCB85 /* Products */,
+				17609DBA219C077D00F85383 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		173FEF021AA63A07006CCB85 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				173FEF011AA63A07006CCB85 /* glutapp */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		17609DBA219C077D00F85383 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				17609DC6219C7B5700F85383 /* CoreFoundation.framework */,
+				17609DBB219C077D00F85383 /* libSOIL.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		173FEF001AA63A07006CCB85 /* glutapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 173FEF081AA63A07006CCB85 /* Build configuration list for PBXNativeTarget "glutapp" */;
+			buildPhases = (
+				173FEEFD1AA63A07006CCB85 /* Sources */,
+				173FEEFE1AA63A07006CCB85 /* Frameworks */,
+				173FEEFF1AA63A07006CCB85 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = glutapp;
+			productName = glutapp;
+			productReference = 173FEF011AA63A07006CCB85 /* glutapp */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		173FEEF91AA63A07006CCB85 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Angelo Kyrilov";
+				TargetAttributes = {
+					173FEF001AA63A07006CCB85 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 173FEEFC1AA63A07006CCB85 /* Build configuration list for PBXProject "glutapp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 173FEEF81AA63A07006CCB85;
+			productRefGroup = 173FEF021AA63A07006CCB85 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				173FEF001AA63A07006CCB85 /* glutapp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		173FEEFD1AA63A07006CCB85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17609DB8219BF07300F85383 /* App.cpp in Sources */,
+				173FEF0C1AA63AC4006CCB85 /* app_main.cpp in Sources */,
+				17609DCB219C9C3E00F85383 /* AnimatedRect.cpp in Sources */,
+				1727D28C219145520048CB99 /* GlutApp.cpp in Sources */,
+				17609DC2219C098400F85383 /* Rect.cpp in Sources */,
+				17609DCE219CA02D00F85383 /* Timer.cpp in Sources */,
+				17609DC5219C0DE800F85383 /* TexRect.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		173FEF061AA63A07006CCB85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		173FEF071AA63A07006CCB85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		173FEF091AA63A07006CCB85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = SOIL/includes;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SOIL/lib/macOS",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		173FEF0A1AA63A07006CCB85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = SOIL/includes;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SOIL/lib/macOS",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		173FEEFC1AA63A07006CCB85 /* Build configuration list for PBXProject "glutapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				173FEF061AA63A07006CCB85 /* Debug */,
+				173FEF071AA63A07006CCB85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		173FEF081AA63A07006CCB85 /* Build configuration list for PBXNativeTarget "glutapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				173FEF091AA63A07006CCB85 /* Debug */,
+				173FEF0A1AA63A07006CCB85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 173FEEF91AA63A07006CCB85 /* Project object */;
+}
