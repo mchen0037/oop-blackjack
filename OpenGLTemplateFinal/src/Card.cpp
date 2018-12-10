@@ -1,7 +1,17 @@
 #include "Card.hpp"
+// #include <iostream>
 
-Card::Card(char _rank, char _suit, bool _face): rank(_rank), suit(_suit), face_up(_face) {
+Card::Card() {
+  // std::cout << "Calling Card()" << std::endl;
+  this->rank = 'N';
+  this->suit = 'N';
+  this->face_up = false;
+}
 
+Card::Card(char _rank, char _suit, bool _face) {
+  this->rank = _rank;
+  this->suit = _suit;
+  this->face_up = _face;
 }
 
 char Card::getRank() const {

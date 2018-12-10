@@ -9,7 +9,8 @@ private:
 
 public:
   // Constructors
-  Card(char='N', char='N', bool=false);
+  Card();
+  Card(char _rank, char _suit, bool _face);
 
   // Accessors
   char getRank() const;
