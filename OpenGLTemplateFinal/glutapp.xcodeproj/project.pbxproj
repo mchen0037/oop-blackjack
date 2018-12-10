@@ -282,7 +282,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/SOIL/lib/macOS",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 			};
@@ -296,7 +296,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/SOIL/lib/macOS",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 			};

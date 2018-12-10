@@ -23,6 +23,7 @@ void App::keyDown(unsigned char key, float x, float y){
     }
 }
 
+
 App::~App(){
     std::cout << "Exiting..." << std::endl;
     delete explosion;

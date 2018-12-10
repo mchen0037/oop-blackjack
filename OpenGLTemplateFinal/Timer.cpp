@@ -1,11 +1,10 @@
 #include "Timer.h"
 
 void Timer::repeat(Timer* self){
-    if (self->running){
+    while (self->running){
         int delay = self->interval;
         self->action();
         std::this_thread::sleep_for (std::chrono::milliseconds(delay));
-        repeat(self);
     }
 }
 
