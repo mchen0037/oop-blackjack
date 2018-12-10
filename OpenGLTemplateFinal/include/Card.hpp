@@ -1,16 +1,16 @@
-#ifndef Card_h
-#define Card_h
+#ifndef Card_hpp
+#define Card_hpp
 
 class Card {
 private:
-  char rank;
-  char suit;
-  bool face_up;
+  char m_rank;
+  char m_suit;
+  bool m_face_up;
 
 public:
   // Constructors
   Card();
-  Card(char _rank, char _suit, bool _face);
+  Card(char t_rank, char t_suit, bool t_face);
 
   // Accessors
   char getRank() const;
@@ -18,9 +18,9 @@ public:
   bool getFace() const;
 
   // Mutators
-  void setRank(const char _rank);
-  void setSuit(const char _suit);
-  void setFace(const bool _face);
+  void setRank(const char t_rank);
+  void setSuit(const char t_suit);
+  void setFace(const bool t_face);
 
 
 };

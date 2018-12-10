@@ -1,22 +1,19 @@
-#ifndef BjCard_h
-#define BjCard_h
+#ifndef BjCard_hpp
+#define BjCard_hpp
 
 #include "Card.hpp"
 
 class BjCard : public Card {
 private:
-  int value;
+  int m_value;
 
 public:
   // Constructors
   BjCard();
-  BjCard(char _rank, char _suit, bool _face);
+  BjCard(char t_rank, char t_suit, bool t_face);
 
   // Accessors
   int getValue() const;
-
-  // Mutators
-  // void setValue(const char _rank);
 
 };
 

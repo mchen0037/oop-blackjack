@@ -5,80 +5,60 @@ BjCard::BjCard() {
 
 }
 
-BjCard::BjCard(char _rank, char _suit, bool _face) {
+BjCard::BjCard(char t_rank, char t_suit, bool t_face) {
   // std::cout << "Creating a BjCard with: " << _rank << " " << _suit << std::endl;
-  this->setRank(_rank);
-  this->setSuit(_suit);
-  this->setFace(_face);
+  this->setRank(t_rank);
+  this->setSuit(t_suit);
+  this->setFace(t_face);
 
   // Better way to handle this?
-  switch (_rank) {
+  switch (t_rank) {
     case 'A':
-      this->value = 11;
+      this->m_value = 11;
       break;
     case '2':
-      this->value = 2;
+      this->m_value = 2;
       break;
     case '3':
-      this->value = 3;
+      this->m_value = 3;
       break;
     case '4':
-      this->value = 4;
+      this->m_value = 4;
         break;
     case '5':
-      this->value = 5;
+      this->m_value = 5;
       break;
     case '6':
-      this->value = 6;
+      this->m_value = 6;
       break;
     case '7':
-      this->value = 7;
+      this->m_value = 7;
       break;
     case '8':
-      this->value = 8;
+      this->m_value = 8;
       break;
     case '9':
-      this->value = 9;
+      this->m_value = 9;
       break;
     case '0':
-      this->value = 10;
+      this->m_value = 10;
       break;
     case 'J':
-      this->value = 10;
+      this->m_value = 10;
       break;
     case 'Q':
-      this->value = 10;
+      this->m_value = 10;
       break;
     case 'K':
-      this->value = 10;
+      this->m_value = 10;
       break;
     default:
-      this->value = -100;
+      this->m_value = -100;
   }
 
-  // std::cout << "Created a BjCard with value " << this->value << std::endl;
+  // std::cout << "Created a BjCard with value " << this->m_value << std::endl;
 }
 
 int BjCard::getValue() const {
-  return this->value;
+  return this->m_value;
 }
-
-// char BjCard::getRank() const {
-//   return this->rank;
-// }
-// char BjCard::getSuit() const {
-//   return this->suit;
-// }
-// bool BjCard::getFace() const {
-//   return this->face_up;
-// }
-//
-// void BjCard::setRank(const char _rank) {
-//   this->rank = _rank;
-// }
-// void BjCard::setSuit(const char _suit) {
-//   this->suit = _suit;
-// }
-// void BjCard::setFace(const bool _face) {
-//   this->face_up = _face;
-// }
