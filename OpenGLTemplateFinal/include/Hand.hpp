@@ -5,7 +5,7 @@
 #include "Card.hpp"
 
 class Hand {
-private:
+protected:
   std::vector<Card*> m_cards;
 
 public:

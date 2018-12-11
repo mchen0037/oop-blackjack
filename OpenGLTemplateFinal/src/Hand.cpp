@@ -7,8 +7,9 @@ Hand::Hand() {}
 void Hand::printHand() {
   for (std::vector<Card*>::iterator it = m_cards.begin();
     it != m_cards.end(); ++it ) {
-    std::cout << (*it)->getRank() << " " << (*it)->getSuit() << std::endl;
+    std::cout << (*it)->getRank() << " " << (*it)->getSuit() << ", ";
   }
+  std::cout << std::endl;
 }
 
 
