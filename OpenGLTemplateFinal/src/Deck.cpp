@@ -35,7 +35,8 @@ void Deck::deal(std::vector<Hand*> t_players, int t_per_hand) {
 
 }
 
-// TODO
-void Deck::give(Card* t_card, Hand* t_hand) {
-
+// Decks will only give the next card(m_cards->back())
+void Deck::give(Hand* t_hand) {
+  t_hand->addCard(m_cards.back());
+  m_cards.pop_back();
 }
