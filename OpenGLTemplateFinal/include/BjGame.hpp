@@ -13,11 +13,15 @@ private:
   BjDeck* m_deck;
 
 public:
+  // Constructors
   BjGame();
+
+  // Methods
   bool stillPlaying();
   void dealCards(BjHand* t_hand);
   void play();
   void init();
+  void printState();
 
 };
 

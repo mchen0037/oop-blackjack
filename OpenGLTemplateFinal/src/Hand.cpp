@@ -6,6 +6,7 @@ Hand::Hand() {}
 
 // For Debugging
 void Hand::printHand() {
+  std::cout << "\t\t";
   for (std::vector<Card*>::iterator it = this->m_cards.begin();
     it != this->m_cards.end(); ++it ) {
     std::cout << "[" << (*it)->getRank() << " " << (*it)->getSuit() << " " << (*it)->getFace() << "], ";
