@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:glutapp.xcodeproj">
+      location = "self:/Users/miguelhernandez/SoftwareDev/UCM-class-code/CSE165/final-project/blackjack/OpenGLTemplateFinal/glutapp.xcodeproj">
    </FileRef>
 </Workspace>

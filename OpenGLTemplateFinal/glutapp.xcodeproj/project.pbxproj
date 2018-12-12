@@ -7,17 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1727D28C219145520048CB99 /* GlutApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1727D28A219145520048CB99 /* GlutApp.cpp */; settings = {COMPILER_FLAGS = "-w"; }; };
-		173FEF0C1AA63AC4006CCB85 /* app_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 173FEF0B1AA63AC4006CCB85 /* app_main.cpp */; settings = {COMPILER_FLAGS = "-w"; }; };
 		173FEF161AA63B1B006CCB85 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 173FEF151AA63B1B006CCB85 /* OpenGL.framework */; };
 		173FEF181AA63B22006CCB85 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 173FEF171AA63B22006CCB85 /* GLUT.framework */; };
-		17609DB8219BF07300F85383 /* App.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 17609DB6219BF07300F85383 /* App.cpp */; };
 		17609DBC219C077D00F85383 /* libSOIL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 17609DBB219C077D00F85383 /* libSOIL.a */; };
-		17609DC2219C098400F85383 /* Rect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 17609DC0219C098400F85383 /* Rect.cpp */; settings = {COMPILER_FLAGS = "-w"; }; };
-		17609DC5219C0DE800F85383 /* TexRect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 17609DC3219C0DE800F85383 /* TexRect.cpp */; settings = {COMPILER_FLAGS = "-w"; }; };
 		17609DC7219C7B5700F85383 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17609DC6219C7B5700F85383 /* CoreFoundation.framework */; };
-		17609DCB219C9C3E00F85383 /* AnimatedRect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 17609DC9219C9C3E00F85383 /* AnimatedRect.cpp */; settings = {COMPILER_FLAGS = "-w"; }; };
-		17609DCE219CA02D00F85383 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 17609DCC219CA02D00F85383 /* Timer.cpp */; settings = {COMPILER_FLAGS = "-w"; }; };
+		E02B778621C1C28A00791E89 /* TexRect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E02B777621C1C28A00791E89 /* TexRect.cpp */; };
+		E02B778721C1C28A00791E89 /* BjHand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E02B777721C1C28A00791E89 /* BjHand.cpp */; };
+		E02B778821C1C28A00791E89 /* Deck.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E02B777821C1C28A00791E89 /* Deck.cpp */; };
+		E02B778921C1C28A00791E89 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E02B777921C1C28A00791E89 /* Timer.cpp */; };
+		E02B778A21C1C28A00791E89 /* BjGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E02B777A21C1C28A00791E89 /* BjGame.cpp */; };
+		E02B778B21C1C28A00791E89 /* GlutApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E02B777B21C1C28A00791E89 /* GlutApp.cpp */; };
+		E02B778C21C1C28A00791E89 /* BjPlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E02B777C21C1C28A00791E89 /* BjPlayer.cpp */; };
+		E02B778D21C1C28A00791E89 /* BjCard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E02B777D21C1C28A00791E89 /* BjCard.cpp */; };
+		E02B778E21C1C28A00791E89 /* Rect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E02B777E21C1C28A00791E89 /* Rect.cpp */; };
+		E02B778F21C1C28A00791E89 /* Hand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E02B777F21C1C28A00791E89 /* Hand.cpp */; };
+		E02B779021C1C28A00791E89 /* BjDealer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E02B778021C1C28A00791E89 /* BjDealer.cpp */; };
+		E02B779121C1C28A00791E89 /* app_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E02B778121C1C28A00791E89 /* app_main.cpp */; };
+		E02B779221C1C28A00791E89 /* Card.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E02B778221C1C28A00791E89 /* Card.cpp */; };
+		E02B779321C1C28A00791E89 /* AnimatedRect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E02B778321C1C28A00791E89 /* AnimatedRect.cpp */; };
+		E02B779421C1C28A00791E89 /* BjDeck.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E02B778421C1C28A00791E89 /* BjDeck.cpp */; };
+		E02B779521C1C28A00791E89 /* App.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E02B778521C1C28A00791E89 /* App.cpp */; };
+		E02B77EC21C1C32500791E89 /* libSOIL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E02B77AB21C1C32400791E89 /* libSOIL.a */; };
+		E02B77ED21C1C32500791E89 /* libSOIL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E02B77AD21C1C32400791E89 /* libSOIL.a */; };
+		E02B77EE21C1C32500791E89 /* image_helper.c in Sources */ = {isa = PBXBuildFile; fileRef = E02B77AF21C1C32400791E89 /* image_helper.c */; };
+		E02B77EF21C1C32500791E89 /* image_DXT.c in Sources */ = {isa = PBXBuildFile; fileRef = E02B77B321C1C32400791E89 /* image_DXT.c */; };
+		E02B77F021C1C32500791E89 /* SOIL.c in Sources */ = {isa = PBXBuildFile; fileRef = E02B77B521C1C32400791E89 /* SOIL.c */; };
+		E02B77F121C1C32500791E89 /* stb_image_aug.c in Sources */ = {isa = PBXBuildFile; fileRef = E02B77B621C1C32400791E89 /* stb_image_aug.c */; };
+		E02B77F221C1C32500791E89 /* freeglut.lib in Frameworks */ = {isa = PBXBuildFile; fileRef = E02B77BD21C1C32400791E89 /* freeglut.lib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,24 +49,93 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1727D28A219145520048CB99 /* GlutApp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GlutApp.cpp; sourceTree = "<group>"; };
-		1727D28B219145520048CB99 /* GlutApp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlutApp.h; sourceTree = "<group>"; };
 		173FEF011AA63A07006CCB85 /* glutapp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = glutapp; sourceTree = BUILT_PRODUCTS_DIR; };
-		173FEF0B1AA63AC4006CCB85 /* app_main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = app_main.cpp; sourceTree = "<group>"; };
 		173FEF151AA63B1B006CCB85 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		173FEF171AA63B22006CCB85 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
-		17609DB6219BF07300F85383 /* App.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = App.cpp; sourceTree = "<group>"; };
-		17609DB7219BF07300F85383 /* App.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = App.h; sourceTree = "<group>"; };
 		17609DBB219C077D00F85383 /* libSOIL.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSOIL.a; path = SOIL/lib/macOS/libSOIL.a; sourceTree = "<group>"; };
-		17609DC0219C098400F85383 /* Rect.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Rect.cpp; sourceTree = "<group>"; };
-		17609DC1219C098400F85383 /* Rect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Rect.h; sourceTree = "<group>"; };
-		17609DC3219C0DE800F85383 /* TexRect.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TexRect.cpp; sourceTree = "<group>"; };
-		17609DC4219C0DE800F85383 /* TexRect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TexRect.h; sourceTree = "<group>"; };
 		17609DC6219C7B5700F85383 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
-		17609DC9219C9C3E00F85383 /* AnimatedRect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AnimatedRect.cpp; sourceTree = "<group>"; };
-		17609DCA219C9C3E00F85383 /* AnimatedRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimatedRect.h; sourceTree = "<group>"; };
-		17609DCC219CA02D00F85383 /* Timer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Timer.cpp; sourceTree = "<group>"; };
-		17609DCD219CA02D00F85383 /* Timer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Timer.h; sourceTree = "<group>"; };
+		E02B777621C1C28A00791E89 /* TexRect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TexRect.cpp; sourceTree = "<group>"; };
+		E02B777721C1C28A00791E89 /* BjHand.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BjHand.cpp; sourceTree = "<group>"; };
+		E02B777821C1C28A00791E89 /* Deck.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Deck.cpp; sourceTree = "<group>"; };
+		E02B777921C1C28A00791E89 /* Timer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Timer.cpp; sourceTree = "<group>"; };
+		E02B777A21C1C28A00791E89 /* BjGame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BjGame.cpp; sourceTree = "<group>"; };
+		E02B777B21C1C28A00791E89 /* GlutApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GlutApp.cpp; sourceTree = "<group>"; };
+		E02B777C21C1C28A00791E89 /* BjPlayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BjPlayer.cpp; sourceTree = "<group>"; };
+		E02B777D21C1C28A00791E89 /* BjCard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BjCard.cpp; sourceTree = "<group>"; };
+		E02B777E21C1C28A00791E89 /* Rect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Rect.cpp; sourceTree = "<group>"; };
+		E02B777F21C1C28A00791E89 /* Hand.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Hand.cpp; sourceTree = "<group>"; };
+		E02B778021C1C28A00791E89 /* BjDealer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BjDealer.cpp; sourceTree = "<group>"; };
+		E02B778121C1C28A00791E89 /* app_main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = app_main.cpp; sourceTree = "<group>"; };
+		E02B778221C1C28A00791E89 /* Card.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Card.cpp; sourceTree = "<group>"; };
+		E02B778321C1C28A00791E89 /* AnimatedRect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AnimatedRect.cpp; sourceTree = "<group>"; };
+		E02B778421C1C28A00791E89 /* BjDeck.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BjDeck.cpp; sourceTree = "<group>"; };
+		E02B778521C1C28A00791E89 /* App.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = App.cpp; sourceTree = "<group>"; };
+		E02B779721C1C29A00791E89 /* Card.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Card.hpp; sourceTree = "<group>"; };
+		E02B779821C1C29A00791E89 /* BjDeck.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BjDeck.hpp; sourceTree = "<group>"; };
+		E02B779921C1C29A00791E89 /* Hand.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Hand.hpp; sourceTree = "<group>"; };
+		E02B779A21C1C29A00791E89 /* App.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = App.h; sourceTree = "<group>"; };
+		E02B779B21C1C29A00791E89 /* TexRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TexRect.h; sourceTree = "<group>"; };
+		E02B779C21C1C29A00791E89 /* BjDealer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BjDealer.hpp; sourceTree = "<group>"; };
+		E02B779D21C1C29A00791E89 /* Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Timer.h; sourceTree = "<group>"; };
+		E02B779E21C1C29A00791E89 /* AnimatedRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimatedRect.h; sourceTree = "<group>"; };
+		E02B779F21C1C29A00791E89 /* GlutApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlutApp.h; sourceTree = "<group>"; };
+		E02B77A021C1C29A00791E89 /* Deck.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Deck.hpp; sourceTree = "<group>"; };
+		E02B77A121C1C29A00791E89 /* Rect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rect.h; sourceTree = "<group>"; };
+		E02B77A221C1C29A00791E89 /* BjGame.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BjGame.hpp; sourceTree = "<group>"; };
+		E02B77A321C1C29A00791E89 /* BjPlayer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BjPlayer.hpp; sourceTree = "<group>"; };
+		E02B77A421C1C29A00791E89 /* BjCard.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BjCard.hpp; sourceTree = "<group>"; };
+		E02B77A521C1C29A00791E89 /* BjHand.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BjHand.hpp; sourceTree = "<group>"; };
+		E02B77A821C1C32400791E89 /* SOIL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOIL.h; sourceTree = "<group>"; };
+		E02B77AB21C1C32400791E89 /* libSOIL.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSOIL.a; sourceTree = "<group>"; };
+		E02B77AD21C1C32400791E89 /* libSOIL.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSOIL.a; sourceTree = "<group>"; };
+		E02B77AF21C1C32400791E89 /* image_helper.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = image_helper.c; sourceTree = "<group>"; };
+		E02B77B021C1C32400791E89 /* stb_image_aug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image_aug.h; sourceTree = "<group>"; };
+		E02B77B121C1C32400791E89 /* SOIL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOIL.h; sourceTree = "<group>"; };
+		E02B77B221C1C32400791E89 /* stbi_DDS_aug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stbi_DDS_aug.h; sourceTree = "<group>"; };
+		E02B77B321C1C32400791E89 /* image_DXT.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = image_DXT.c; sourceTree = "<group>"; };
+		E02B77B421C1C32400791E89 /* stbi_DDS_aug_c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stbi_DDS_aug_c.h; sourceTree = "<group>"; };
+		E02B77B521C1C32400791E89 /* SOIL.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SOIL.c; sourceTree = "<group>"; };
+		E02B77B621C1C32400791E89 /* stb_image_aug.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stb_image_aug.c; sourceTree = "<group>"; };
+		E02B77B721C1C32400791E89 /* image_helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = image_helper.h; sourceTree = "<group>"; };
+		E02B77B821C1C32400791E89 /* image_DXT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = image_DXT.h; sourceTree = "<group>"; };
+		E02B77BA21C1C32400791E89 /* freeglut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = freeglut.h; sourceTree = "<group>"; };
+		E02B77BB21C1C32400791E89 /* freeglut_ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = freeglut_ext.h; sourceTree = "<group>"; };
+		E02B77BC21C1C32400791E89 /* freeglut_std.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = freeglut_std.h; sourceTree = "<group>"; };
+		E02B77BD21C1C32400791E89 /* freeglut.lib */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = freeglut.lib; sourceTree = "<group>"; };
+		E02B77BF21C1C32500791E89 /* fireball.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = fireball.bmp; sourceTree = "<group>"; };
+		E02B77C321C1C32500791E89 /* Rect.obj */ = {isa = PBXFileReference; lastKnownFileType = file; path = Rect.obj; sourceTree = "<group>"; };
+		E02B77C421C1C32500791E89 /* glutapp.ilk */ = {isa = PBXFileReference; lastKnownFileType = file; path = glutapp.ilk; sourceTree = "<group>"; };
+		E02B77C521C1C32500791E89 /* glutapp.pdb */ = {isa = PBXFileReference; lastKnownFileType = file; path = glutapp.pdb; sourceTree = "<group>"; };
+		E02B77C621C1C32500791E89 /* glutapp.exe */ = {isa = PBXFileReference; lastKnownFileType = file; path = glutapp.exe; sourceTree = "<group>"; };
+		E02B77C721C1C32500791E89 /* vc141.pdb */ = {isa = PBXFileReference; lastKnownFileType = file; path = vc141.pdb; sourceTree = "<group>"; };
+		E02B77C821C1C32500791E89 /* glutapp.log */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = glutapp.log; sourceTree = "<group>"; };
+		E02B77C921C1C32500791E89 /* App.obj */ = {isa = PBXFileReference; lastKnownFileType = file; path = App.obj; sourceTree = "<group>"; };
+		E02B77CA21C1C32500791E89 /* AnimatedRect.obj */ = {isa = PBXFileReference; lastKnownFileType = file; path = AnimatedRect.obj; sourceTree = "<group>"; };
+		E02B77CB21C1C32500791E89 /* image_helper.obj */ = {isa = PBXFileReference; lastKnownFileType = file; path = image_helper.obj; sourceTree = "<group>"; };
+		E02B77CC21C1C32500791E89 /* app_main.obj */ = {isa = PBXFileReference; lastKnownFileType = file; path = app_main.obj; sourceTree = "<group>"; };
+		E02B77CD21C1C32500791E89 /* image_DXT.obj */ = {isa = PBXFileReference; lastKnownFileType = file; path = image_DXT.obj; sourceTree = "<group>"; };
+		E02B77CF21C1C32500791E89 /* link.read.1.tlog */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = link.read.1.tlog; sourceTree = "<group>"; };
+		E02B77D021C1C32500791E89 /* link.command.1.tlog */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = link.command.1.tlog; sourceTree = "<group>"; };
+		E02B77D121C1C32500791E89 /* link.write.1.tlog */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = link.write.1.tlog; sourceTree = "<group>"; };
+		E02B77D221C1C32500791E89 /* CL.read.1.tlog */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CL.read.1.tlog; sourceTree = "<group>"; };
+		E02B77D321C1C32500791E89 /* CL.command.1.tlog */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CL.command.1.tlog; sourceTree = "<group>"; };
+		E02B77D421C1C32500791E89 /* glutapp.lastbuildstate */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = glutapp.lastbuildstate; sourceTree = "<group>"; };
+		E02B77D521C1C32500791E89 /* CL.write.1.tlog */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CL.write.1.tlog; sourceTree = "<group>"; };
+		E02B77D621C1C32500791E89 /* stb_image_aug.obj */ = {isa = PBXFileReference; lastKnownFileType = file; path = stb_image_aug.obj; sourceTree = "<group>"; };
+		E02B77D721C1C32500791E89 /* TexRect.obj */ = {isa = PBXFileReference; lastKnownFileType = file; path = TexRect.obj; sourceTree = "<group>"; };
+		E02B77D821C1C32500791E89 /* vc141.idb */ = {isa = PBXFileReference; lastKnownFileType = file; path = vc141.idb; sourceTree = "<group>"; };
+		E02B77D921C1C32500791E89 /* Timer.obj */ = {isa = PBXFileReference; lastKnownFileType = file; path = Timer.obj; sourceTree = "<group>"; };
+		E02B77DA21C1C32500791E89 /* GlutApp.obj */ = {isa = PBXFileReference; lastKnownFileType = file; path = GlutApp.obj; sourceTree = "<group>"; };
+		E02B77DB21C1C32500791E89 /* SOIL.obj */ = {isa = PBXFileReference; lastKnownFileType = file; path = SOIL.obj; sourceTree = "<group>"; };
+		E02B77DC21C1C32500791E89 /* clean.bat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = clean.bat; sourceTree = "<group>"; };
+		E02B77DD21C1C32500791E89 /* glutapp.sln */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = glutapp.sln; sourceTree = "<group>"; };
+		E02B77E121C1C32500791E89 /* .suo */ = {isa = PBXFileReference; lastKnownFileType = file; path = .suo; sourceTree = "<group>"; };
+		E02B77E521C1C32500791E89 /* APP.ipch */ = {isa = PBXFileReference; lastKnownFileType = file; path = APP.ipch; sourceTree = "<group>"; };
+		E02B77E621C1C32500791E89 /* Browse.VC.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = Browse.VC.db; sourceTree = "<group>"; };
+		E02B77E821C1C32500791E89 /* .suo */ = {isa = PBXFileReference; lastKnownFileType = file; path = .suo; sourceTree = "<group>"; };
+		E02B77E921C1C32500791E89 /* glutapp.vcxproj.user */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = glutapp.vcxproj.user; sourceTree = "<group>"; };
+		E02B77EA21C1C32500791E89 /* glutapp.vcxproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = glutapp.vcxproj; sourceTree = "<group>"; };
+		E02B77EB21C1C32500791E89 /* freeglut.dll */ = {isa = PBXFileReference; lastKnownFileType = file; path = freeglut.dll; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +145,11 @@
 			files = (
 				17609DC7219C7B5700F85383 /* CoreFoundation.framework in Frameworks */,
 				17609DBC219C077D00F85383 /* libSOIL.a in Frameworks */,
+				E02B77ED21C1C32500791E89 /* libSOIL.a in Frameworks */,
 				173FEF181AA63B22006CCB85 /* GLUT.framework in Frameworks */,
+				E02B77EC21C1C32500791E89 /* libSOIL.a in Frameworks */,
 				173FEF161AA63B1B006CCB85 /* OpenGL.framework in Frameworks */,
+				E02B77F221C1C32500791E89 /* freeglut.lib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,21 +159,15 @@
 		173FEEF81AA63A07006CCB85 = {
 			isa = PBXGroup;
 			children = (
+				E02B77BE21C1C32500791E89 /* assets */,
+				E02B77B921C1C32400791E89 /* freeglut */,
+				E02B77A621C1C32400791E89 /* SOIL */,
+				E02B77C021C1C32500791E89 /* visualc15 */,
+				E02B77AE21C1C32400791E89 /* windows */,
+				E02B779621C1C29A00791E89 /* include */,
+				E02B777521C1C28A00791E89 /* src */,
 				173FEF171AA63B22006CCB85 /* GLUT.framework */,
 				173FEF151AA63B1B006CCB85 /* OpenGL.framework */,
-				173FEF0B1AA63AC4006CCB85 /* app_main.cpp */,
-				17609DB7219BF07300F85383 /* App.h */,
-				17609DB6219BF07300F85383 /* App.cpp */,
-				1727D28B219145520048CB99 /* GlutApp.h */,
-				1727D28A219145520048CB99 /* GlutApp.cpp */,
-				17609DCD219CA02D00F85383 /* Timer.h */,
-				17609DCC219CA02D00F85383 /* Timer.cpp */,
-				17609DC9219C9C3E00F85383 /* AnimatedRect.cpp */,
-				17609DCA219C9C3E00F85383 /* AnimatedRect.h */,
-				17609DC1219C098400F85383 /* Rect.h */,
-				17609DC0219C098400F85383 /* Rect.cpp */,
-				17609DC4219C0DE800F85383 /* TexRect.h */,
-				17609DC3219C0DE800F85383 /* TexRect.cpp */,
 				173FEF021AA63A07006CCB85 /* Products */,
 				17609DBA219C077D00F85383 /* Frameworks */,
 			);
@@ -106,6 +188,249 @@
 				17609DBB219C077D00F85383 /* libSOIL.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E02B777521C1C28A00791E89 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				E02B777621C1C28A00791E89 /* TexRect.cpp */,
+				E02B777721C1C28A00791E89 /* BjHand.cpp */,
+				E02B777821C1C28A00791E89 /* Deck.cpp */,
+				E02B777921C1C28A00791E89 /* Timer.cpp */,
+				E02B777A21C1C28A00791E89 /* BjGame.cpp */,
+				E02B777B21C1C28A00791E89 /* GlutApp.cpp */,
+				E02B777C21C1C28A00791E89 /* BjPlayer.cpp */,
+				E02B777D21C1C28A00791E89 /* BjCard.cpp */,
+				E02B777E21C1C28A00791E89 /* Rect.cpp */,
+				E02B777F21C1C28A00791E89 /* Hand.cpp */,
+				E02B778021C1C28A00791E89 /* BjDealer.cpp */,
+				E02B778121C1C28A00791E89 /* app_main.cpp */,
+				E02B778221C1C28A00791E89 /* Card.cpp */,
+				E02B778321C1C28A00791E89 /* AnimatedRect.cpp */,
+				E02B778421C1C28A00791E89 /* BjDeck.cpp */,
+				E02B778521C1C28A00791E89 /* App.cpp */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		E02B779621C1C29A00791E89 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				E02B779721C1C29A00791E89 /* Card.hpp */,
+				E02B779821C1C29A00791E89 /* BjDeck.hpp */,
+				E02B779921C1C29A00791E89 /* Hand.hpp */,
+				E02B779A21C1C29A00791E89 /* App.h */,
+				E02B779B21C1C29A00791E89 /* TexRect.h */,
+				E02B779C21C1C29A00791E89 /* BjDealer.hpp */,
+				E02B779D21C1C29A00791E89 /* Timer.h */,
+				E02B779E21C1C29A00791E89 /* AnimatedRect.h */,
+				E02B779F21C1C29A00791E89 /* GlutApp.h */,
+				E02B77A021C1C29A00791E89 /* Deck.hpp */,
+				E02B77A121C1C29A00791E89 /* Rect.h */,
+				E02B77A221C1C29A00791E89 /* BjGame.hpp */,
+				E02B77A321C1C29A00791E89 /* BjPlayer.hpp */,
+				E02B77A421C1C29A00791E89 /* BjCard.hpp */,
+				E02B77A521C1C29A00791E89 /* BjHand.hpp */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		E02B77A621C1C32400791E89 /* SOIL */ = {
+			isa = PBXGroup;
+			children = (
+				E02B77A721C1C32400791E89 /* includes */,
+				E02B77A921C1C32400791E89 /* lib */,
+			);
+			path = SOIL;
+			sourceTree = "<group>";
+		};
+		E02B77A721C1C32400791E89 /* includes */ = {
+			isa = PBXGroup;
+			children = (
+				E02B77A821C1C32400791E89 /* SOIL.h */,
+			);
+			path = includes;
+			sourceTree = "<group>";
+		};
+		E02B77A921C1C32400791E89 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				E02B77AA21C1C32400791E89 /* macOS */,
+				E02B77AC21C1C32400791E89 /* ubuntu */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		E02B77AA21C1C32400791E89 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				E02B77AB21C1C32400791E89 /* libSOIL.a */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		E02B77AC21C1C32400791E89 /* ubuntu */ = {
+			isa = PBXGroup;
+			children = (
+				E02B77AD21C1C32400791E89 /* libSOIL.a */,
+			);
+			path = ubuntu;
+			sourceTree = "<group>";
+		};
+		E02B77AE21C1C32400791E89 /* windows */ = {
+			isa = PBXGroup;
+			children = (
+				E02B77AF21C1C32400791E89 /* image_helper.c */,
+				E02B77B021C1C32400791E89 /* stb_image_aug.h */,
+				E02B77B121C1C32400791E89 /* SOIL.h */,
+				E02B77B221C1C32400791E89 /* stbi_DDS_aug.h */,
+				E02B77B321C1C32400791E89 /* image_DXT.c */,
+				E02B77B421C1C32400791E89 /* stbi_DDS_aug_c.h */,
+				E02B77B521C1C32400791E89 /* SOIL.c */,
+				E02B77B621C1C32400791E89 /* stb_image_aug.c */,
+				E02B77B721C1C32400791E89 /* image_helper.h */,
+				E02B77B821C1C32400791E89 /* image_DXT.h */,
+			);
+			path = windows;
+			sourceTree = "<group>";
+		};
+		E02B77B921C1C32400791E89 /* freeglut */ = {
+			isa = PBXGroup;
+			children = (
+				E02B77BA21C1C32400791E89 /* freeglut.h */,
+				E02B77BB21C1C32400791E89 /* freeglut_ext.h */,
+				E02B77BC21C1C32400791E89 /* freeglut_std.h */,
+				E02B77BD21C1C32400791E89 /* freeglut.lib */,
+			);
+			path = freeglut;
+			sourceTree = "<group>";
+		};
+		E02B77BE21C1C32500791E89 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				E02B77BF21C1C32500791E89 /* fireball.bmp */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		E02B77C021C1C32500791E89 /* visualc15 */ = {
+			isa = PBXGroup;
+			children = (
+				E02B77C121C1C32500791E89 /* obj */,
+				E02B77DC21C1C32500791E89 /* clean.bat */,
+				E02B77DD21C1C32500791E89 /* glutapp.sln */,
+				E02B77DE21C1C32500791E89 /* .vs */,
+				E02B77E921C1C32500791E89 /* glutapp.vcxproj.user */,
+				E02B77EA21C1C32500791E89 /* glutapp.vcxproj */,
+				E02B77EB21C1C32500791E89 /* freeglut.dll */,
+			);
+			path = visualc15;
+			sourceTree = "<group>";
+		};
+		E02B77C121C1C32500791E89 /* obj */ = {
+			isa = PBXGroup;
+			children = (
+				E02B77C221C1C32500791E89 /* glutapp_Debug */,
+			);
+			path = obj;
+			sourceTree = "<group>";
+		};
+		E02B77C221C1C32500791E89 /* glutapp_Debug */ = {
+			isa = PBXGroup;
+			children = (
+				E02B77C321C1C32500791E89 /* Rect.obj */,
+				E02B77C421C1C32500791E89 /* glutapp.ilk */,
+				E02B77C521C1C32500791E89 /* glutapp.pdb */,
+				E02B77C621C1C32500791E89 /* glutapp.exe */,
+				E02B77C721C1C32500791E89 /* vc141.pdb */,
+				E02B77C821C1C32500791E89 /* glutapp.log */,
+				E02B77C921C1C32500791E89 /* App.obj */,
+				E02B77CA21C1C32500791E89 /* AnimatedRect.obj */,
+				E02B77CB21C1C32500791E89 /* image_helper.obj */,
+				E02B77CC21C1C32500791E89 /* app_main.obj */,
+				E02B77CD21C1C32500791E89 /* image_DXT.obj */,
+				E02B77CE21C1C32500791E89 /* glutapp.tlog */,
+				E02B77D621C1C32500791E89 /* stb_image_aug.obj */,
+				E02B77D721C1C32500791E89 /* TexRect.obj */,
+				E02B77D821C1C32500791E89 /* vc141.idb */,
+				E02B77D921C1C32500791E89 /* Timer.obj */,
+				E02B77DA21C1C32500791E89 /* GlutApp.obj */,
+				E02B77DB21C1C32500791E89 /* SOIL.obj */,
+			);
+			path = glutapp_Debug;
+			sourceTree = "<group>";
+		};
+		E02B77CE21C1C32500791E89 /* glutapp.tlog */ = {
+			isa = PBXGroup;
+			children = (
+				E02B77CF21C1C32500791E89 /* link.read.1.tlog */,
+				E02B77D021C1C32500791E89 /* link.command.1.tlog */,
+				E02B77D121C1C32500791E89 /* link.write.1.tlog */,
+				E02B77D221C1C32500791E89 /* CL.read.1.tlog */,
+				E02B77D321C1C32500791E89 /* CL.command.1.tlog */,
+				E02B77D421C1C32500791E89 /* glutapp.lastbuildstate */,
+				E02B77D521C1C32500791E89 /* CL.write.1.tlog */,
+			);
+			path = glutapp.tlog;
+			sourceTree = "<group>";
+		};
+		E02B77DE21C1C32500791E89 /* .vs */ = {
+			isa = PBXGroup;
+			children = (
+				E02B77DF21C1C32500791E89 /* glutapp */,
+			);
+			path = .vs;
+			sourceTree = "<group>";
+		};
+		E02B77DF21C1C32500791E89 /* glutapp */ = {
+			isa = PBXGroup;
+			children = (
+				E02B77E021C1C32500791E89 /* v15 */,
+				E02B77E721C1C32500791E89 /* v14 */,
+			);
+			path = glutapp;
+			sourceTree = "<group>";
+		};
+		E02B77E021C1C32500791E89 /* v15 */ = {
+			isa = PBXGroup;
+			children = (
+				E02B77E121C1C32500791E89 /* .suo */,
+				E02B77E221C1C32500791E89 /* ipch */,
+				E02B77E621C1C32500791E89 /* Browse.VC.db */,
+			);
+			path = v15;
+			sourceTree = "<group>";
+		};
+		E02B77E221C1C32500791E89 /* ipch */ = {
+			isa = PBXGroup;
+			children = (
+				E02B77E321C1C32500791E89 /* AutoPCH */,
+			);
+			path = ipch;
+			sourceTree = "<group>";
+		};
+		E02B77E321C1C32500791E89 /* AutoPCH */ = {
+			isa = PBXGroup;
+			children = (
+				E02B77E421C1C32500791E89 /* f8e662ffd8741385 */,
+			);
+			path = AutoPCH;
+			sourceTree = "<group>";
+		};
+		E02B77E421C1C32500791E89 /* f8e662ffd8741385 */ = {
+			isa = PBXGroup;
+			children = (
+				E02B77E521C1C32500791E89 /* APP.ipch */,
+			);
+			path = f8e662ffd8741385;
+			sourceTree = "<group>";
+		};
+		E02B77E721C1C32500791E89 /* v14 */ = {
+			isa = PBXGroup;
+			children = (
+				E02B77E821C1C32500791E89 /* .suo */,
+			);
+			path = v14;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,13 +489,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17609DB8219BF07300F85383 /* App.cpp in Sources */,
-				173FEF0C1AA63AC4006CCB85 /* app_main.cpp in Sources */,
-				17609DCB219C9C3E00F85383 /* AnimatedRect.cpp in Sources */,
-				1727D28C219145520048CB99 /* GlutApp.cpp in Sources */,
-				17609DC2219C098400F85383 /* Rect.cpp in Sources */,
-				17609DCE219CA02D00F85383 /* Timer.cpp in Sources */,
-				17609DC5219C0DE800F85383 /* TexRect.cpp in Sources */,
+				E02B778E21C1C28A00791E89 /* Rect.cpp in Sources */,
+				E02B778821C1C28A00791E89 /* Deck.cpp in Sources */,
+				E02B77EE21C1C32500791E89 /* image_helper.c in Sources */,
+				E02B779121C1C28A00791E89 /* app_main.cpp in Sources */,
+				E02B778D21C1C28A00791E89 /* BjCard.cpp in Sources */,
+				E02B778721C1C28A00791E89 /* BjHand.cpp in Sources */,
+				E02B778F21C1C28A00791E89 /* Hand.cpp in Sources */,
+				E02B778A21C1C28A00791E89 /* BjGame.cpp in Sources */,
+				E02B779021C1C28A00791E89 /* BjDealer.cpp in Sources */,
+				E02B779421C1C28A00791E89 /* BjDeck.cpp in Sources */,
+				E02B779521C1C28A00791E89 /* App.cpp in Sources */,
+				E02B77F121C1C32500791E89 /* stb_image_aug.c in Sources */,
+				E02B778B21C1C28A00791E89 /* GlutApp.cpp in Sources */,
+				E02B77F021C1C32500791E89 /* SOIL.c in Sources */,
+				E02B778621C1C28A00791E89 /* TexRect.cpp in Sources */,
+				E02B778921C1C28A00791E89 /* Timer.cpp in Sources */,
+				E02B77EF21C1C32500791E89 /* image_DXT.c in Sources */,
+				E02B778C21C1C28A00791E89 /* BjPlayer.cpp in Sources */,
+				E02B779321C1C28A00791E89 /* AnimatedRect.cpp in Sources */,
+				E02B779221C1C28A00791E89 /* Card.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +619,8 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/SOIL/lib/macOS",
+					"$(PROJECT_DIR)/SOIL/lib/ubuntu",
+					"$(PROJECT_DIR)/freeglut",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -295,6 +635,8 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/SOIL/lib/macOS",
+					"$(PROJECT_DIR)/SOIL/lib/ubuntu",
+					"$(PROJECT_DIR)/freeglut",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_NAME = "$(TARGET_NAME)";
