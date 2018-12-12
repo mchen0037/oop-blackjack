@@ -1,6 +1,7 @@
 #include <iostream>
 #include <algorithm>
 #include <random>
+#include <chrono>
 
 #include "Deck.hpp"
 #include "Hand.hpp"
@@ -22,9 +23,15 @@ void Deck::populate() {
 }
 
 void Deck::shuffle() {
-  // https://stackoverflow.com/questions/6926433/how-to-shuffle-a-stdvector
-  auto rng = std::default_random_engine {};
-  std::shuffle(std::begin(this->m_cards), std::end(this->m_cards), rng);
+  // http://www.cplusplus.com/reference/random/linear_congruential_engine/seed/
+  typedef std::chrono::high_resolution_clock myclock;
+  myclock::time_point beginning = myclock::now();
+  myclock::duration d = myclock::now() - beginning;
+
+  unsigned seed2 = d.count();
+  std::minstd_rand0 generator (seed2);
+
+  std::shuffle(std::begin(this->m_cards), std::end(this->m_cards), generator);
 }
 
 // TODO

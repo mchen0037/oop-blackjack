@@ -25,13 +25,13 @@ void BjPlayer::bust() {
 }
 
 void BjPlayer::win() {
-  // TODO
+  std::cout << this->getName() << " wins!" << std::endl;
 }
 
 void BjPlayer::lose() {
-  // TODO
+  std::cout << this->getName() << " loses.." << std::endl;
 }
 
 void BjPlayer::push() {
-  // TODO
+  std::cout << "PUSH!! Tie Game. "<< std::endl;
 }

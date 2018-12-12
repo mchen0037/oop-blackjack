@@ -25,6 +25,7 @@ void BjGame::play() {
   }
   if (m_player->isBusted()) {
     m_player->bust();
+    goto playerBusted;
   }
 
   // Dealer's Turn.
@@ -34,9 +35,20 @@ void BjGame::play() {
   }
   if (m_dealer->isBusted()) {
     m_dealer->bust();
+    goto dealerBusted;
   }
-  
-  std::cout << "Done with play." << std::endl;
+
+  if (m_player->getTotal() > m_dealer->getTotal()) {
+dealerBusted:
+    m_player->win();
+  }
+  else if (m_player->getTotal() < m_dealer->getTotal()){
+playerBusted:
+    m_player->lose();
+  }
+  else {
+    m_player->push();
+  }
 }
 
 void BjGame::init() {
