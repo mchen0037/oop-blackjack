@@ -27,4 +27,6 @@ void Hand::clear() {
 
 void Hand::addCard(Card* c) {
   m_cards.push_back(c);
+  // When you give a card, set it to face up.
+  c->setFace(true);
 }
