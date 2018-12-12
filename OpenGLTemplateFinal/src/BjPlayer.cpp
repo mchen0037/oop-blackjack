@@ -12,11 +12,15 @@ BjPlayer::BjPlayer(std::string t_name) {
 
 bool BjPlayer::isHitting() {
   // TODO: Ask for user input and then return if true if they decide to hit.
+  char ans;
+  std::cout << "Hit? (Y/N): ";
+  std::cin >> ans;
 
-  return false;
+  return (ans == 'Y');
 }
 
 void BjPlayer::bust() {
+  std::cout << "Looks like you're busted.. " << std::endl;
   // TODO
 }
 

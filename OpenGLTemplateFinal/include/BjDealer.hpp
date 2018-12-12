@@ -13,8 +13,8 @@ public:
   // Accessors
 
   // Methods
+  bool isHitting();
   void bust();
-
   void flipFirstCard();
 
 

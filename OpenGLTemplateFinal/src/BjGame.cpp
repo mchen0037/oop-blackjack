@@ -17,7 +17,26 @@ void BjGame::dealCards(BjHand* t_hand) {
 }
 
 void BjGame::play() {
-  // TODO
+  // Player's turn
+  // Continue asking if the player wants to hit or not or if he's busted.
+  while (!this->m_player->isBusted() && this->m_player->isHitting()) {
+    this->m_deck->give(m_player);
+    this->printState();
+  }
+  if (m_player->isBusted()) {
+    m_player->bust();
+  }
+
+  // Dealer's Turn.
+  while (!this->m_dealer->isBusted() && this->m_dealer->isHitting()) {
+    this->m_deck->give(m_dealer);
+    this->printState();
+  }
+  if (m_dealer->isBusted()) {
+    m_dealer->bust();
+  }
+  
+  std::cout << "Done with play." << std::endl;
 }
 
 void BjGame::init() {

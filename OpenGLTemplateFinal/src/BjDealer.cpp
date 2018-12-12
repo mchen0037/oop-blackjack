@@ -6,6 +6,10 @@ BjDealer::BjDealer() {
   this->setName("Dealer");
 }
 
+bool BjDealer::isHitting() {
+  return (this->getTotal() < 17);
+}
+
 void BjDealer::bust() {
   std::cout << "Dealer Busted!" << std::endl;
 }
