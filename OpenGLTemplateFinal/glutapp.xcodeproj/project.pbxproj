@@ -193,7 +193,7 @@
 		E02B777521C1C28A00791E89 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				E02B777621C1C28A00791E89 /* TexRect.cpp */,
+				E0EE6F5821C1C92F00380347 /* Shapes */,
 				E02B777721C1C28A00791E89 /* BjHand.cpp */,
 				E02B777821C1C28A00791E89 /* Deck.cpp */,
 				E02B777921C1C28A00791E89 /* Timer.cpp */,
@@ -201,12 +201,10 @@
 				E02B777B21C1C28A00791E89 /* GlutApp.cpp */,
 				E02B777C21C1C28A00791E89 /* BjPlayer.cpp */,
 				E02B777D21C1C28A00791E89 /* BjCard.cpp */,
-				E02B777E21C1C28A00791E89 /* Rect.cpp */,
 				E02B777F21C1C28A00791E89 /* Hand.cpp */,
 				E02B778021C1C28A00791E89 /* BjDealer.cpp */,
 				E02B778121C1C28A00791E89 /* app_main.cpp */,
 				E02B778221C1C28A00791E89 /* Card.cpp */,
-				E02B778321C1C28A00791E89 /* AnimatedRect.cpp */,
 				E02B778421C1C28A00791E89 /* BjDeck.cpp */,
 				E02B778521C1C28A00791E89 /* App.cpp */,
 			);
@@ -216,17 +214,15 @@
 		E02B779621C1C29A00791E89 /* include */ = {
 			isa = PBXGroup;
 			children = (
+				E0EE6F5921C1C96100380347 /* Shapes */,
 				E02B779721C1C29A00791E89 /* Card.hpp */,
 				E02B779821C1C29A00791E89 /* BjDeck.hpp */,
 				E02B779921C1C29A00791E89 /* Hand.hpp */,
 				E02B779A21C1C29A00791E89 /* App.h */,
-				E02B779B21C1C29A00791E89 /* TexRect.h */,
 				E02B779C21C1C29A00791E89 /* BjDealer.hpp */,
 				E02B779D21C1C29A00791E89 /* Timer.h */,
-				E02B779E21C1C29A00791E89 /* AnimatedRect.h */,
 				E02B779F21C1C29A00791E89 /* GlutApp.h */,
 				E02B77A021C1C29A00791E89 /* Deck.hpp */,
-				E02B77A121C1C29A00791E89 /* Rect.h */,
 				E02B77A221C1C29A00791E89 /* BjGame.hpp */,
 				E02B77A321C1C29A00791E89 /* BjPlayer.hpp */,
 				E02B77A421C1C29A00791E89 /* BjCard.hpp */,
@@ -431,6 +427,26 @@
 				E02B77E821C1C32500791E89 /* .suo */,
 			);
 			path = v14;
+			sourceTree = "<group>";
+		};
+		E0EE6F5821C1C92F00380347 /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				E02B778321C1C28A00791E89 /* AnimatedRect.cpp */,
+				E02B777E21C1C28A00791E89 /* Rect.cpp */,
+				E02B777621C1C28A00791E89 /* TexRect.cpp */,
+			);
+			path = Shapes;
+			sourceTree = "<group>";
+		};
+		E0EE6F5921C1C96100380347 /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				E02B779E21C1C29A00791E89 /* AnimatedRect.h */,
+				E02B77A121C1C29A00791E89 /* Rect.h */,
+				E02B779B21C1C29A00791E89 /* TexRect.h */,
+			);
+			path = Shapes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
