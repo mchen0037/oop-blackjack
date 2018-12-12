@@ -7,9 +7,6 @@
 
 Deck::Deck() {
   Hand();
-  // Maybe move these into the Game object?
-  populate();
-  shuffle();
 }
 
 void Deck::populate() {

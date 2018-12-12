@@ -13,7 +13,7 @@ public:
   Deck();
 
   // Methods
-  void populate();
+  virtual void populate();
   void shuffle();
   void deal(std::vector<Hand*> t_players, int t_per_hand);
   void give(Hand* t_hand);

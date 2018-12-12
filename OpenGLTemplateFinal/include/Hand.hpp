@@ -13,6 +13,7 @@ public:
   Hand();
   // Accessors
   void printHand();
+  void printValue();
 
   // Mutators
   void clear();
