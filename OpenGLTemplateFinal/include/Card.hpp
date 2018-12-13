@@ -8,6 +8,10 @@ private:
   bool m_face_up;
 
 public:
+  // static arrays, will be initialized only once in corresponding cpp file
+  const static char SUITS[4];
+  const static char RANKS[13];
+  
   // Constructors
   Card();
   Card(char t_rank, char t_suit, bool t_face);
@@ -25,7 +29,5 @@ public:
 
 };
 
-// static char* SUIT = {'c', 'd', 'h', 's'};
-// static char* RANKS = {'A', '2', '3', '4', '5', '6', '7', '8', '9', '0', 'J', 'Q', 'K'};
 
 #endif

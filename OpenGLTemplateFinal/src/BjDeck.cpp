@@ -9,12 +9,8 @@ BjDeck::BjDeck() {
 
 // Fill the Hand with BjCards instead of Cards.
 void BjDeck::populate() {
-  const char RANKS[] =
-    {'A', '2', '3', '4', '5', '6', '7', '8', '9', '0', 'J', 'Q', 'K'};
-  const char SUITS[] = {'C', 'D', 'H', 'S'};
-
-  for (auto suit : SUITS) {
-    for (auto rank : RANKS) {
+  for (auto suit : Card::SUITS) {
+    for (auto rank : Card::RANKS) {
       this->m_cards.push_back(new BjCard(rank, suit, true));
     }
   }

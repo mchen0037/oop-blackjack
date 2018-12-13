@@ -1,6 +1,9 @@
 #include "Card.hpp"
 // #include <iostream>
 
+const char Card::SUITS[4] = {'c', 'd', 'h', 's'};
+const char Card::RANKS[13] = {'A', '2', '3', '4', '5', '6', '7', '8', '9', '0', 'J', 'Q', 'K'};
+
 Card::Card() : m_rank('N'), m_suit('N'), m_face_up(false) {
 }
 
