@@ -17,7 +17,7 @@ void Deck::populate() {
 
   for (auto suit : SUITS) {
     for (auto rank : RANKS) {
-      this->m_cards.push_back(new Card(rank, suit, false));
+      this->m_cards.push_back(new Card(rank, suit, true));
     }
   }
 }

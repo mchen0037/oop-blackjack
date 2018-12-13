@@ -9,7 +9,14 @@ void Hand::printHand() {
   std::cout << "\t\t";
   for (std::vector<Card*>::iterator it = this->m_cards.begin();
     it != this->m_cards.end(); ++it ) {
-    std::cout << "[" << (*it)->getRank() << " " << (*it)->getSuit() << " " << (*it)->getFace() << "], ";
+    // handle case for face down
+    if (!(*it)->getFace()) {
+      // show XX
+      std::cout << "XX, ";
+    }
+    else {
+      std::cout << "[" << (*it)->getRank() << " " << (*it)->getSuit() << " " << (*it)->getFace() << "], ";
+    }
   }
   std::cout << std::endl;
 }
