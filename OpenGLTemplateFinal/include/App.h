@@ -2,7 +2,7 @@
 #define App_h
 
 #include "GlutApp.h"
-#include "AnimatedRect.h"
+#include "Shapes/AnimatedRect.h"
 
 
 class App: public GlutApp {

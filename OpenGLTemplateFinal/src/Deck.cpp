@@ -1,4 +1,3 @@
-#include <iostream>
 #include <algorithm>
 #include <random>
 #include <chrono>
@@ -9,6 +8,8 @@
 Deck::Deck() {
   Hand();
 }
+
+Deck::~Deck() { }
 
 void Deck::populate() {
   for (auto suit : Card::SUITS) {
@@ -24,7 +25,7 @@ void Deck::shuffle() {
   myclock::time_point beginning = myclock::now();
   myclock::duration d = myclock::now() - beginning;
 
-  unsigned seed2 = d.count();
+  unsigned int seed2 = (unsigned int) d.count();
   std::minstd_rand0 generator (seed2);
 
   std::shuffle(std::begin(this->m_cards), std::end(this->m_cards), generator);
@@ -32,7 +33,19 @@ void Deck::shuffle() {
 
 // TODO
 void Deck::deal(std::vector<Hand*> t_players, int t_per_hand) {
-
+  for (std::vector<Hand*>::iterator it = t_players.begin() ; it != t_players.end(); ++it) {
+    Hand* currHand = *it;
+    for (int i = 0; i < t_per_hand; ++i) {
+      if (m_cards.size() > 0) {
+        Card* top_card = m_cards.back();
+        currHand->addCard(top_card);
+        m_cards.pop_back();
+      }
+      else {
+        throw "Can't continue deal.  Out of cards!";
+      }
+    }
+  }
 }
 
 // Decks will only give the next card(m_cards->back())

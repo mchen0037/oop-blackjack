@@ -15,7 +15,8 @@ void BjDealer::bust() {
 }
 
 void BjDealer::flipFirstCard() {
-  // It makes more sense to flip every card face up when you give it to them
-  // and then setting the dealer's card to face down at the init of a turn.
-  this->m_cards[0]->setFace(false);
+  // by default, all cards will be face up initially.
+  // this will just inverse the face up flag of the first card
+  const bool isFaceUp = this->m_cards[0]->getFace();
+  this->m_cards[0]->setFace(!isFaceUp); // flip
 }

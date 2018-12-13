@@ -23,6 +23,10 @@ public:
   // Methods
   bool isBusted();
   
+  // virtual methods
+  
+  virtual void bust();
+  
   virtual bool isHitting() = 0;
 
 };

@@ -1,3 +1,4 @@
+#include <iostream>
 #include "BjHand.hpp"
 #include "BjCard.hpp"
 
@@ -48,4 +49,8 @@ void BjHand::setName(std::string t_name) {
 
 bool BjHand::isBusted() {
   return (this->getTotal() > 21) ? true : false;
+}
+
+void BjHand::bust() {
+  std::cout << "Busted." << std::endl;
 }
