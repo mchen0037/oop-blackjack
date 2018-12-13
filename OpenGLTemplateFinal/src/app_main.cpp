@@ -6,7 +6,7 @@ int main(int argc, char** argv) {
     GlutApp* app = new App(argc, argv);
 
     char c = 'Y';
-    while (c == 'Y') {
+    while (c == 'Y' || c == 'y') {
       BjGame* game = new BjGame();
       game->init();
       game->printState();
@@ -14,6 +14,7 @@ int main(int argc, char** argv) {
 
       std::cout << "Play Again? (Y/N): " << std::endl;
       std::cin >> c;
+      delete game;
     }
     
     app->run();

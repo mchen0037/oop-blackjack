@@ -12,10 +12,31 @@ std::string BjHand::getName() {
 }
 
 int BjHand::getTotal() {
+  
+  // add up card values, treat each Ace as 1
   int sum = 0;
   for (auto card: m_cards) {
-    BjCard* b = (BjCard*) card;
-    sum += b->getValue();
+    BjCard* bjCard = (BjCard*) card;
+    if (bjCard->getRank() == 'A') {
+      sum += 1;
+    }
+    else {
+      sum += bjCard->getValue();
+    }
+  }
+  // determine if hand contains an Ace
+  bool containsAce = false;
+  for (auto card: m_cards) {
+    BjCard* bjCard = (BjCard*) card;
+    if (bjCard->getRank() == 'A') {
+      containsAce = true;
+      break;
+    }
+  }
+  // if hand contains Ace and total is low enough, treat Ace as 11
+  if (containsAce && sum <= 11) {
+    // add only 10, since we have already added 1 for the Ace when computing sum
+    sum += 10;
   }
   return sum;
 }
