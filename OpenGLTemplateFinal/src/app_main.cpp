@@ -8,10 +8,9 @@ int main(int argc, char** argv) {
     char c = 'Y';
     while (c == 'Y' || c == 'y') {
       BjGame* game = new BjGame();
-      game->init();
-      game->printState();
+//      game->init();
+//      game->printState();
       game->play();
-
       std::cout << "Play Again? (Y/N): " << std::endl;
       std::cin >> c;
       delete game;
