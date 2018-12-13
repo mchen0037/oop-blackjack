@@ -11,6 +11,10 @@ protected:
 public:
   // Constructors
   Hand();
+  
+  // Destructor
+  ~Hand();
+  
   // Accessors
   void printHand();
   void printValue();

@@ -15,12 +15,14 @@ private:
 public:
   // Constructors
   BjGame();
+  
+  // Destructor
+  ~BjGame();
 
   // Methods
   bool stillPlaying();
-  void dealCards(BjHand* t_hand);
+  void dealAdditionalCards(BjHand* t_hand);
   void play();
-  void init();
   void printState();
 
 };

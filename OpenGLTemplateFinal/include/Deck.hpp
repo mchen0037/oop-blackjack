@@ -11,6 +11,9 @@ private:
 public:
   // Constructors
   Deck();
+  
+  // Destructor
+  ~Deck();
 
   // Methods
   virtual void populate();
