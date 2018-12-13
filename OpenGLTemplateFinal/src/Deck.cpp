@@ -13,7 +13,7 @@ Deck::Deck() {
 void Deck::populate() {
   for (auto suit : Card::SUITS) {
     for (auto rank : Card::RANKS) {
-      this->m_cards.push_back(new Card(rank, suit, false));
+      this->m_cards.push_back(new Card(rank, suit, true));
     }
   }
 }

@@ -16,7 +16,7 @@ bool BjPlayer::isHitting() {
   std::cout << "Hit? (Y/N): ";
   std::cin >> ans;
 
-  return (ans == 'Y');
+  return (ans == 'Y' || ans == 'y');
 }
 
 void BjPlayer::bust() {
