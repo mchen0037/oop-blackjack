@@ -15,7 +15,7 @@ void BjDeck::populate() {
 
   for (auto suit : SUITS) {
     for (auto rank : RANKS) {
-      this->m_cards.push_back(new BjCard(rank, suit, false));
+      this->m_cards.push_back(new BjCard(rank, suit, true));
     }
   }
 }

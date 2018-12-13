@@ -22,6 +22,8 @@ public:
 
   // Methods
   bool isBusted();
+  
+  virtual bool isHitting() = 0;
 
 };
 
