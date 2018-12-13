@@ -4,6 +4,10 @@
 
 Hand::Hand() {}
 
+Hand::~Hand() {
+  m_cards.clear();
+}
+
 // For Debugging
 void Hand::printHand() {
   std::cout << "\t\t";
