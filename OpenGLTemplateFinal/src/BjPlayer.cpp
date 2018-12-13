@@ -21,6 +21,7 @@ bool BjPlayer::isHitting() {
 
 void BjPlayer::bust() {
   std::cout << "Looks like you're busted.. " << std::endl;
+  lose();
   // TODO
 }
 
