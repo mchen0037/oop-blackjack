@@ -5,61 +5,85 @@ BjGame::BjGame() {
   m_player = new BjPlayer();
   m_dealer = new BjDealer();
   m_deck = new BjDeck();
+  m_deck->populate();
+  m_deck->shuffle();
 }
 
-bool BjGame::stillPlaying() {
-  // TODO
-  return true;
+BjGame::~BjGame() {
+  delete m_player;
+  delete m_dealer;
+  delete m_deck;
 }
 
-void BjGame::dealCards(BjHand* t_hand) {
-  // TODO
+void BjGame::dealAdditionalCards(BjHand* t_hand) {
+  const int PER_HAND = 1;
+  std::vector<Hand*> players;
+  players.push_back(t_hand);
+  while (!(t_hand->isBusted()) && t_hand->isHitting()) {
+    m_deck->deal(players, PER_HAND);
+    this->printState();
+    if (t_hand->isBusted()) {
+      t_hand->bust();
+    }
+  }
 }
 
 void BjGame::play() {
-  // Player's turn
+  const int PER_HAND = 2;
+  // allocating vector on the stack, will be automatically deleted when play() method exits
+  std::vector<Hand*> players;
+  players.push_back(m_player);
+  players.push_back(m_dealer);
+  // deal initial 2 cards to everyone
+  try {
+    m_deck->deal(players, PER_HAND);
+  }
+  catch (const char* msg) {
+    // handle attempted deal of empty deck
+    // need to populate deck, shuffle, and attempt deal again
+    m_deck->populate();
+    m_deck->shuffle();
+    // now we for sure have cards in the deck.
+    m_deck->deal(players, PER_HAND);
+  }
+  
+  // hide dealer's first card
+  m_dealer->flipFirstCard();
+  this->printState();
+  
+  // deal additional cards to player
   // Continue asking if the player wants to hit or not or if he's busted.
-  while (!this->m_player->isBusted() && this->m_player->isHitting()) {
-    this->m_deck->give(m_player);
+  this->dealAdditionalCards(m_player);
+  
+  // reveal dealer's first card
+  m_dealer->flipFirstCard();
+  
+  if (!m_player->isBusted()) {
+    // Dealer's Turn.
+    // deal additional cards to dealer
     this->printState();
+    this->dealAdditionalCards(m_dealer);
+    
+    if (m_dealer->isBusted()) {
+      // player wins
+      m_player->win();
+    }
+    else {
+      // compare player total to dealer total
+      if (m_player->getTotal() > m_dealer->getTotal()) {
+        m_player->win();
+      }
+      else if (m_player->getTotal() < m_dealer->getTotal()) {
+        m_player->lose();
+      }
+      else {
+        m_player->push();
+      }
+    }
   }
-  if (m_player->isBusted()) {
-    m_player->bust();
-    goto playerBusted;
-  }
-
-  // Dealer's Turn.
-  while (!this->m_dealer->isBusted() && this->m_dealer->isHitting()) {
-    this->m_deck->give(m_dealer);
-    this->printState();
-  }
-  if (m_dealer->isBusted()) {
-    m_dealer->bust();
-    goto dealerBusted;
-  }
-
-  if (m_player->getTotal() > m_dealer->getTotal()) {
-dealerBusted:
-    m_player->win();
-  }
-  else if (m_player->getTotal() < m_dealer->getTotal()){
-playerBusted:
-    m_player->lose();
-  }
-  else {
-    m_player->push();
-  }
-}
-
-void BjGame::init() {
-  this->m_deck->populate();
-  this->m_deck->shuffle();
-
-  this->m_deck->give(m_player);
-  this->m_deck->give(m_dealer);
-  this->m_deck->give(m_player);
-  this->m_deck->give(m_dealer);
-  this->m_dealer->flipFirstCard();
+  // remove everyone's cards.
+  m_player->clear();
+  m_dealer->clear();
 }
 
 void BjGame::printState() {

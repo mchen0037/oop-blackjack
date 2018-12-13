@@ -20,7 +20,6 @@ public:
   ~BjGame();
 
   // Methods
-  bool stillPlaying();
   void dealAdditionalCards(BjHand* t_hand);
   void play();
   void printState();
