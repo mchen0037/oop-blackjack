@@ -159,7 +159,7 @@ void BjGame::keyDown(unsigned char key, float x, float y){
   if (key == 'h'){
     
   }
-  if (key == 's'){
+  else if (key == 's'){
     
   }
 }
