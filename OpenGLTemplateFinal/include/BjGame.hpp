@@ -16,6 +16,9 @@ private:
   TexRect* background;
   TexRect* card1;
   TexRect* card2;
+  
+  int m_pos;
+  bool gameEnded;
 public:
   // Constructors
   BjGame(int argc, char** argv);
@@ -34,7 +37,7 @@ public:
   // override from glutapp
   void draw();
   void keyDown(unsigned char key, float x, float y);
-  
+  void drawText(float, float, char*);
 };
 
 

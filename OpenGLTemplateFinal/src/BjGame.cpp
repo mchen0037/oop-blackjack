@@ -2,6 +2,7 @@
 #include "BjGame.hpp"
 
 BjGame::BjGame(int argc, char** argv): GlutApp(argc, argv) {
+  m_pos = -0.8;
   m_player = new BjPlayer();
   m_dealer = new BjDealer();
   m_deck = new BjDeck();
@@ -12,8 +13,6 @@ BjGame::BjGame(int argc, char** argv): GlutApp(argc, argv) {
   background = new TexRect("assets/green_board.png", -1.5, 1.5, 3, 3);
   card1 = new TexRect("assets/cards/0c.png", -0.8, 0.9, 0.4, 0.6);
   card2 = new TexRect("assets/cards/Qc.png", -0.8, 0.0, 0.4, 0.6);
-  
-
 }
 
 BjGame::~BjGame() {
@@ -124,7 +123,10 @@ void BjGame::handleGameOver(std::string t_msg) {
 }
 
 void BjGame::draw() {
+  drawText(-0.8, -0.9, "Press h to HIT");
+  drawText(0.2, -0.9, "Press s to STAND");
   background->draw(0.0);
+
   card1->draw(0.10);
   card2->draw(0.20);
 }
@@ -140,4 +142,21 @@ void BjGame::keyDown(unsigned char key, float x, float y){
   if (key == 's'){
     
   }
+}
+
+/**
+ Float, Float -> Void
+ This is a helper method for drawing text onto the screen.  It is called from the draw() method.
+ The Float parameters are taken in as x and y coordinates for where the text is displayed on the app.
+ The string printed out will be from the 'strings' constant array of strings at the very top.
+ */
+void BjGame::drawText(float t_x, float t_y, char* t_text) {
+  glBegin(GL_TEXTURE);
+  glRasterPos2f(t_x, t_y); // sets position of text in window
+  int length = (int)strlen(t_text);
+  for (int i = 0; i < length; i++) {
+    // loop through characters of state string and print each out
+    glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24, t_text[i]);
+  }
+  glEnd();
 }
