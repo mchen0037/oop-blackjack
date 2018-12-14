@@ -2,11 +2,14 @@
 #define Card_hpp
 
 #include <string>
+#include "Shapes/TexRect.h"
 
 class Card {
   
 protected:
   std::string m_image_file_path;
+  TexRect* m_card_display;
+  
 private:
   char m_rank;
   char m_suit;

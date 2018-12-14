@@ -2,6 +2,7 @@
 #define TexRect_h
 
 #include "Rect.h"
+#include <string>
 
 #if defined WIN32
 #include <freeglut.h>
@@ -20,7 +21,7 @@ protected:
     GLuint texture_id;
     
 public:
-    TexRect(const char*, float, float, float, float);
+  TexRect(std::string, float, float, float, float);
     
     void draw(float z) const;
 };
