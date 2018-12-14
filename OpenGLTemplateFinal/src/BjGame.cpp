@@ -50,8 +50,7 @@ void BjGame::dealOneCard(BjHand *t_hand) {
   players.push_back(t_hand);
   m_deck->deal(players, PER_HAND);
   if (t_hand->isBusted()) {
-    m_gameEnded = true;
-    m_end_str = "Game Over. Player Busted.";
+    handleGameOver("Game Over. Player Busted.");
   }
 }
 
@@ -81,46 +80,6 @@ void BjGame::play() {
   this->printState();
   redraw();
   return;
-
-  // deal additional cards to player
-  // Continue asking if the player wants to hit or not or if he's busted.
-  this->dealAdditionalCards(m_player);
-  m_isPlayerTurn = false;
-
-  // reveal dealer's first card
-  m_dealer->flipFirstCard();
-
-  if (!m_player->isBusted()) {
-    // Dealer's Turn.
-    // deal additional cards to dealer
-    this->printState();
-    this->dealAdditionalCards(m_dealer);
-
-    if (m_dealer->isBusted()) {
-      // player wins
-      this->handleGameOver("Dealer Busted. Player Wins!");
-
-    }
-    else {
-      // compare player total to dealer total
-      if (m_player->getTotal() > m_dealer->getTotal()) {
-        this->handleGameOver("Player Wins!");
-      }
-      else if (m_player->getTotal() < m_dealer->getTotal()) {
-        this->handleGameOver("Player Loses. Dealer Wins.");
-      }
-      else {
-        this->handleGameOver("PUSH!");
-      }
-    }
-  }
-  else {
-    // player busted
-    this->handleGameOver("Player Busted. You Lose.");
-  }
-  // remove everyone's cards.
-  m_player->clear();
-  m_dealer->clear();
 }
 
 void BjGame::printState() {
@@ -142,13 +101,14 @@ void BjGame::printState() {
 
 
 void BjGame::handleGameOver(std::string t_msg) {
-  std::cout << t_msg << std::endl;
+//  std::cout << t_msg << std::endl;
   m_gameEnded = true;
+  m_isPlayerTurn = false;
   m_end_str = t_msg;
+  redraw();
 }
 
 void BjGame::draw() {
-  std::cout << "CALLING DRAW" << std::endl;
   if(m_gameEnded) {
     drawText(-0.2, 0.2, m_end_str);
     drawText(-0.2, 0.1, "Play Again? y for YES / n for NO ");
@@ -176,21 +136,54 @@ void BjGame::keyDown(unsigned char key, float x, float y){
   if (key == 27){
     exit(0);
   }
+  
+  if (m_gameEnded) {
+    if (key == 'y') {
+      resetGame();
+    }
+    else if (key == 'n') {
+      exit(0);
+    }
+  }
+  
+  if (!m_isPlayerTurn) {
+    return;
+  }
 
   if (key == 'h'){
     // handle hit, want to deal additional cards one time
     // only if we haven't busted, we know the player wants
     // to hit because they pressed 'h'
     if (m_player->isBusted()) {
-      m_gameEnded = true;
-      m_end_str = "Game Over. Player Busted.";
-      redraw();
+      handleGameOver("Game Over. Player Busted.");
       return;
     }
     this->dealOneCard(m_player);
   }
   else if (key == 's'){
-    
+    // dealer's turn now, dealOneCard will check for player bust
+    m_isPlayerTurn = false;
+    // reveal dealer's first card
+    m_dealer->flipFirstCard();
+    // deal additional cards for dealer.
+    dealAdditionalCards(m_dealer);
+    if (m_dealer->isBusted()) {
+      // player wins
+      handleGameOver("Game Over. You Win!!!");
+      return;
+    }
+    else {
+      // otherwise, compare player total to dealer total
+      if (m_player->getTotal() > m_dealer->getTotal()) {
+        this->handleGameOver("Player Wins!");
+      }
+      else if (m_player->getTotal() < m_dealer->getTotal()) {
+        this->handleGameOver("Player Loses. Dealer Wins.");
+      }
+      else {
+        this->handleGameOver("Push! (Tie Game)");
+      }
+    }
   }
   redraw();
 }
@@ -219,4 +212,17 @@ void BjGame::drawDeck() {
     delete card;
   }
 
+}
+
+void BjGame::resetGame() {
+  m_player->clear();
+  m_dealer->clear();
+  m_deck->clear();
+  m_deck->populate();
+  m_deck->shuffle();
+  m_gameEnded = false;
+  m_isPlayerTurn = true;
+  m_end_str = "";
+  play();
+  redraw();
 }

@@ -36,6 +36,7 @@ public:
   void dealOneCard(BjHand* t_hand);
   void play();
   void printState();
+  void resetGame();
   
   
   void handleGameOver(std::string t_msg);
