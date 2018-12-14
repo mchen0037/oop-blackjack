@@ -12,6 +12,7 @@ BjGame::BjGame(int argc, char** argv): GlutApp(argc, argv) {
   m_deck->populate();
   m_deck->shuffle();
 
+//  m_banner = new TexRect("assets/banner.png", -0.7, -0.65, 1.5,0.3);
   m_background = new TexRect("assets/green_board.png", -1.5, 1.5, 3, 3);
 //  card1 = new TexRect("assets/cards/0c.png", -0.8, 0.9, 0.4, 0.6);
 //  card2 = new TexRect("assets/cards/Qc.png", -0.8, 0.0, 0.4, 0.6);
@@ -118,10 +119,10 @@ void BjGame::draw() {
   drawText(0.8, -0.3, "TOTAL: " + std::to_string(m_player->getTotal()));
 
 
-  drawText(-0.8, -0.9, "Press h to HIT");
-  drawText(0.2, -0.9, "Press s to STAND");
+  drawText(-0.5, -0.7, "Press h to HIT");
+  drawText(0.2, -0.7, "Press s to STAND");
   m_background->draw(0.0);
-
+//  m_banner->draw(0.1);
 //  card1->draw(0.10);
 //  card2->draw(0.20);
 
@@ -211,7 +212,6 @@ void BjGame::drawDeck() {
     card->draw(i*0.01);
     delete card;
   }
-
 }
 
 void BjGame::resetGame() {

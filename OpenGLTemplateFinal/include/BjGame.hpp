@@ -13,10 +13,10 @@ private:
   BjDealer* m_dealer;
   BjDeck* m_deck;
 
+  TexRect* m_banner;
   TexRect* m_background;
   TexRect* card1;
   TexRect* card2;
-  TexRect* Deck;
   
   int m_pos_x;
   
