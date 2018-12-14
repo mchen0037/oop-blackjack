@@ -1,18 +1,29 @@
 #include <iostream>
 #include "BjGame.hpp"
 
-BjGame::BjGame() {
+BjGame::BjGame(int argc, char** argv): GlutApp(argc, argv) {
   m_player = new BjPlayer();
   m_dealer = new BjDealer();
   m_deck = new BjDeck();
   m_deck->populate();
   m_deck->shuffle();
+  
+  
+  background = new TexRect("assets/green_board.png", -1.5, 1.5, 3, 3);
+  card1 = new TexRect("assets/cards/0c.png", -0.8, 0.8, 0.4, 0.6);
+  card2 = new TexRect("assets/cards/Qc.png", -0.8, 0.0, 0.4, 0.6);
+  
+
 }
 
 BjGame::~BjGame() {
   delete m_player;
   delete m_dealer;
   delete m_deck;
+  
+  delete background;
+  delete card1;
+  delete card2;
 }
 
 void BjGame::dealAdditionalCards(BjHand* t_hand) {
@@ -23,6 +34,8 @@ void BjGame::dealAdditionalCards(BjHand* t_hand) {
     m_deck->deal(players, PER_HAND);
     this->printState();
   }
+  
+  
 }
 
 void BjGame::play() {
@@ -108,4 +121,23 @@ void BjGame::printState() {
 
 void BjGame::handleGameOver(std::string t_msg) {
   std::cout << t_msg << std::endl;
+}
+
+void BjGame::draw() {
+  background->draw(0.0);
+  card1->draw(0.10);
+  card2->draw(0.20);
+}
+
+void BjGame::keyDown(unsigned char key, float x, float y){
+  if (key == 27){
+    exit(0);
+  }
+  
+  if (key == 'h'){
+    
+  }
+  if (key == 's'){
+    
+  }
 }
