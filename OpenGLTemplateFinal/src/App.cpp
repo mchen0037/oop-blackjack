@@ -2,7 +2,7 @@
 #include "App.h"
 
 App::App(int argc, char** argv): GlutApp(argc, argv){
-    background = new TexRect("./assets/green_board.png", -1.5, 1.5, 0.3, 0.3);
+    background = new TexRect("assets/green_board.png", -1.5, 1.5, 3, 3);
 
 }
 
@@ -15,9 +15,9 @@ void App::keyDown(unsigned char key, float x, float y){
         exit(0);
     }
 
-//    if (key == ' '){
-//        background->playOnce();
-//    }
+    if (key == ' '){
+        draw();
+    }
 }
 
 
