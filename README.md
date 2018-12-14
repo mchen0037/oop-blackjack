@@ -3,6 +3,14 @@
 
 Simple blackjack game with a GUI made using OpenGL. Featuring the best deck of cards: Angelo heads.
 
+## Running
+```
+git clone https://github.com/mchen0037/oop-blackjack
+cd oop-blackjack/OpenGLTemplateFinal
+make
+./glutapp
+```
+
 ## App Structure
 ![Parts of Class Structure](https://github.com/mchen0037/oop-blackjack/blob/master/notes.png)
 
