@@ -2,7 +2,7 @@
 
 TexRect::TexRect(const char* filename, float x=0, float y=0, float w=0.5, float h=0.5): Rect(x, y, w, h, 1.0f, 1.0f, 1.0f){
     
-    glClearColor (0.0, 0.0, 0.0, 0.0);
+    glClearColor (1.0, 1.0, 1.0, 1.0);
     glShadeModel(GL_FLAT);
     glEnable(GL_DEPTH_TEST);
     
@@ -30,7 +30,7 @@ void TexRect::draw(float z) const {
     glBindTexture( GL_TEXTURE_2D, texture_id );
     glEnable(GL_TEXTURE_2D);
     
-    glBegin(GL_QUADS);
+    glBegin(GL_POLYGON);
     glColor3f(1.0f, 1.0f, 1.0f);
     glTexCoord2f(0, 0);
     glVertex3f(x, y - h, z);
@@ -48,3 +48,4 @@ void TexRect::draw(float z) const {
     
     glDisable(GL_TEXTURE_2D);
 }
+

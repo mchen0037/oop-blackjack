@@ -7,8 +7,8 @@
 
 class App: public GlutApp {
     TexRect* background;
-//    TexRect* card;
-    
+    TexRect* card1;
+    TexRect* card2;
 public:
     App(int argc, char** argv);
     
