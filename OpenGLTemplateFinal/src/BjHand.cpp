@@ -18,6 +18,9 @@ int BjHand::getTotal() {
   int sum = 0;
   for (auto card: m_cards) {
     BjCard* bjCard = (BjCard*) card;
+    if (!bjCard->getFace()) {
+      continue;
+    }
     if (bjCard->getRank() == 'A') {
       sum += 1;
     }
