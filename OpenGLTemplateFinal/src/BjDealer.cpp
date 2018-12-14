@@ -17,8 +17,8 @@ bool BjDealer::isHitting() {
 void BjDealer::flipFirstCard() {
   // by default, all cards will be face up initially.
   // this will just inverse the face up flag of the first card
-  const bool isFaceUp = this->m_cards[0]->getFace();
-  this->m_cards[0]->setFace(!isFaceUp); // flip
+  const bool isFaceUp = this->m_cards[1]->getFace();
+  this->m_cards[1]->setFace(!isFaceUp); // flip
 }
 
 void BjDealer::drawHand() {
