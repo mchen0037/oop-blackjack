@@ -480,6 +480,8 @@
 				TargetAttributes = {
 					173FEF001AA63A07006CCB85 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = JZSVQ4ML6B;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -631,6 +633,9 @@
 		173FEF091AA63A07006CCB85 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JZSVQ4ML6B;
 				HEADER_SEARCH_PATHS = SOIL/includes;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -640,6 +645,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -647,6 +653,9 @@
 		173FEF0A1AA63A07006CCB85 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JZSVQ4ML6B;
 				HEADER_SEARCH_PATHS = SOIL/includes;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -656,6 +665,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 			};
 			name = Release;

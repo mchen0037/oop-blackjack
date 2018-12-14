@@ -65,8 +65,8 @@ bool Rect::contains(float px, float py) const {
 }
 
 void Rect::draw() const {
-    glColor3f(r, g, b);
-    
+    glColor3f(1.0f, 1.0f, 1.0f);
+
     glBegin(GL_POLYGON);
     
     glVertex2f(x, y);

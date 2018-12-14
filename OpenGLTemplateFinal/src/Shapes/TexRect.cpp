@@ -31,7 +31,7 @@ void TexRect::draw(float z) const {
     glEnable(GL_TEXTURE_2D);
     
     glBegin(GL_QUADS);
-    glColor4f(1, 1, 1, 1);
+    glColor3f(1.0f, 1.0f, 1.0f);
     glTexCoord2f(0, 0);
     glVertex3f(x, y - h, z);
     
