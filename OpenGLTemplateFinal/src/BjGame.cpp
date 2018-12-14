@@ -32,6 +32,7 @@ BjGame::~BjGame() {
 //  delete card2;
 }
 
+// Dealer will be the main one using this method.
 void BjGame::dealAdditionalCards(BjHand* t_hand) {
   const int PER_HAND = 1;
   std::vector<Hand*> players;
@@ -40,8 +41,18 @@ void BjGame::dealAdditionalCards(BjHand* t_hand) {
     m_deck->deal(players, PER_HAND);
     this->printState();
   }
+}
 
-
+// Player will be the main one using this method
+void BjGame::dealOneCard(BjHand *t_hand) {
+  const int PER_HAND = 1;
+  std::vector<Hand*> players;
+  players.push_back(t_hand);
+  m_deck->deal(players, PER_HAND);
+  if (t_hand->isBusted()) {
+    m_gameEnded = true;
+    m_end_str = "Game Over. Player Busted.";
+  }
 }
 
 void BjGame::play() {
@@ -167,10 +178,19 @@ void BjGame::keyDown(unsigned char key, float x, float y){
   }
 
   if (key == 'h'){
-
+    // handle hit, want to deal additional cards one time
+    // only if we haven't busted, we know the player wants
+    // to hit because they pressed 'h'
+    if (m_player->isBusted()) {
+      m_gameEnded = true;
+      m_end_str = "Game Over. Player Busted.";
+      redraw();
+      return;
+    }
+    this->dealOneCard(m_player);
   }
   else if (key == 's'){
-
+    
   }
   redraw();
 }
