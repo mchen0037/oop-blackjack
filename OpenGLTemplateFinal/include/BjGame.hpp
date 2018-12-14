@@ -33,6 +33,7 @@ public:
 
   // Methods
   void dealAdditionalCards(BjHand* t_hand);
+  void dealOneCard(BjHand* t_hand);
   void play();
   void printState();
   
