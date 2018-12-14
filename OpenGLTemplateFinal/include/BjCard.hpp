@@ -11,6 +11,9 @@ public:
   // Constructors
   BjCard();
   BjCard(char t_rank, char t_suit, bool t_face);
+  
+  // destructor
+  ~BjCard();
 
   // Accessors
   int getValue() const;

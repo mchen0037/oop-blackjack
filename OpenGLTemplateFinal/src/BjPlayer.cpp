@@ -19,6 +19,14 @@ bool BjPlayer::isHitting() {
   return (ans == 'Y' || ans == 'y');
 }
 
+void BjPlayer::drawHand() {
+  float j = 0.1;
+  for (int i = 0; i < m_cards.size(); ++i) {
+    m_cards[i]->drawCard(-0.8 + j, 0.0, 0.1 + j);
+    j += 0.1;
+  }
+}
+
 // void BjPlayer::bust() {
 //   std::cout << "Looks like you're busted.. " << std::endl;
 //   lose();

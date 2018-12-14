@@ -16,6 +16,7 @@ public:
   bool isHitting();
   // void bust();
   void flipFirstCard();
+  void drawHand();
 
 
 };

@@ -2,11 +2,14 @@
 #define Card_hpp
 
 #include <string>
+#include "Shapes/TexRect.h"
 
 class Card {
   
 protected:
   std::string m_image_file_path;
+  TexRect* m_card_display;
+  
 private:
   char m_rank;
   char m_suit;
@@ -37,6 +40,9 @@ public:
   void setRank(const char t_rank);
   void setSuit(const char t_suit);
   void setFace(const bool t_face);
+  
+  // METHODS FOR DISPLAYING THE CARD ON SCREEN
+  void drawCard(float, float, float);
 
 
 };

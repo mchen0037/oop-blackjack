@@ -9,10 +9,9 @@ App::App(int argc, char** argv): GlutApp(argc, argv){
 }
 
 void App::draw() {
-    background->draw(0.0);
+//    background->draw(0.0);
     card1->draw(0.10);
     card2->draw(0.20);
-
 }
 
 void App::keyDown(unsigned char key, float x, float y){
@@ -20,8 +19,11 @@ void App::keyDown(unsigned char key, float x, float y){
         exit(0);
     }
 
-    if (key == ' '){
-//        draw();
+    if (key == 'h'){
+        
+    }
+    if (key == 's'){
+        
     }
 }
 

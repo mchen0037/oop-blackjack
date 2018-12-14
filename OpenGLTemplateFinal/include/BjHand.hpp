@@ -28,6 +28,8 @@ public:
   // virtual void bust();
 
   virtual bool isHitting() = 0;
+  
+  virtual void drawHand() = 0;
 
 };
 
