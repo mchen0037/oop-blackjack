@@ -10,7 +10,7 @@ BjGame::BjGame(int argc, char** argv): GlutApp(argc, argv) {
   
   
   background = new TexRect("assets/green_board.png", -1.5, 1.5, 3, 3);
-  card1 = new TexRect("assets/cards/0c.png", -0.8, 0.8, 0.4, 0.6);
+  card1 = new TexRect("assets/cards/0c.png", -0.8, 0.9, 0.4, 0.6);
   card2 = new TexRect("assets/cards/Qc.png", -0.8, 0.0, 0.4, 0.6);
   
 
