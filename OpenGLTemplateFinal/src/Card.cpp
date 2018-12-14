@@ -11,6 +11,7 @@ Card::Card() : m_rank('N'), m_suit('N'), m_face_up(false) {
 
 Card::Card(char t_rank, char t_suit, bool t_face) : m_rank(t_rank), m_suit(t_suit), m_face_up(t_face) {
   setImageFilePath(t_rank, t_suit);
+  m_card_display = new TexRect(m_image_file_path, 0.0, 0.0, 0.4, 0.6);
 }
 
 char Card::getRank() const {

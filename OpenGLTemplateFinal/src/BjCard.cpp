@@ -54,6 +54,10 @@ BjCard::BjCard(char t_rank, char t_suit, bool t_face): Card(t_rank, t_suit, t_fa
   // std::cout << "Created a BjCard " << this->getRank() << " " << this->getSuit() << " with value " << this->m_value << std::endl;
 }
 
+BjCard::~BjCard() {
+  delete m_card_display;
+}
+
 int BjCard::getValue() const {
   // std::cout << "this->m_value: " << this->m_value << std::endl;
   return this->m_value;
