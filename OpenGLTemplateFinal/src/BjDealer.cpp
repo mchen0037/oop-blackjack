@@ -1,5 +1,3 @@
-#include <iostream>
-
 #include "BjDealer.hpp"
 
 BjDealer::BjDealer() {
@@ -9,10 +7,6 @@ BjDealer::BjDealer() {
 bool BjDealer::isHitting() {
   return (this->getTotal() < 17);
 }
-
-// void BjDealer::bust() {
-//   std::cout << "Dealer Busted!" << std::endl;
-// }
 
 void BjDealer::flipFirstCard() {
   // by default, all cards will be face up initially.

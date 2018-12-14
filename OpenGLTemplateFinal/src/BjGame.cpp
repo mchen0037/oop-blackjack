@@ -1,7 +1,6 @@
 #include <iostream>
 #include <string>
 #include <cstring>
-#include <stdio.h>
 #include "BjGame.hpp"
 
 BjGame::BjGame(int argc, char** argv): GlutApp(argc, argv) {
@@ -12,10 +11,7 @@ BjGame::BjGame(int argc, char** argv): GlutApp(argc, argv) {
   m_deck->populate();
   m_deck->shuffle();
 
-//  m_banner = new TexRect("assets/banner.png", -0.7, -0.65, 1.5,0.3);
   m_background = new TexRect("assets/green_board.png", -1.5, 1.5, 3, 3);
-//  card1 = new TexRect("assets/cards/0c.png", -0.8, 0.9, 0.4, 0.6);
-//  card2 = new TexRect("assets/cards/Qc.png", -0.8, 0.0, 0.4, 0.6);
 
   m_gameEnded = false;
   m_isPlayerTurn = true;
@@ -29,8 +25,6 @@ BjGame::~BjGame() {
   delete m_deck;
 
   delete m_background;
-//  delete card1;
-//  delete card2;
 }
 
 // Dealer will be the main one using this method.
@@ -102,7 +96,6 @@ void BjGame::printState() {
 
 
 void BjGame::handleGameOver(std::string t_msg) {
-//  std::cout << t_msg << std::endl;
   m_gameEnded = true;
   m_isPlayerTurn = false;
   m_end_str = t_msg;
@@ -137,7 +130,7 @@ void BjGame::keyDown(unsigned char key, float x, float y){
   if (key == 27){
     exit(0);
   }
-  
+
   if (m_gameEnded) {
     if (key == 'y') {
       resetGame();
@@ -146,7 +139,7 @@ void BjGame::keyDown(unsigned char key, float x, float y){
       exit(0);
     }
   }
-  
+
   if (!m_isPlayerTurn) {
     return;
   }

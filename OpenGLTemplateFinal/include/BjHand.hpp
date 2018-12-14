@@ -1,8 +1,8 @@
 #ifndef BjHand_hpp
 #define BjHand_hpp
 
-#include "Hand.hpp"
 #include <string>
+#include "Hand.hpp"
 
 class BjHand : public Hand {
 private:
@@ -24,11 +24,7 @@ public:
   bool isBusted();
 
   // virtual methods
-
-  // virtual void bust();
-
   virtual bool isHitting() = 0;
-  
   virtual void drawHand() = 0;
 
 };

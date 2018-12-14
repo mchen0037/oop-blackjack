@@ -1,5 +1,4 @@
 #include "Card.hpp"
-#include <iostream>
 #include <string>
 
 const char Card::SUITS[4] = {'c', 'd', 'h', 's'};
@@ -11,7 +10,6 @@ Card::Card() : m_rank('N'), m_suit('N'), m_face_up(false) {
 
 Card::Card(char t_rank, char t_suit, bool t_face) : m_rank(t_rank), m_suit(t_suit), m_face_up(t_face) {
   setImageFilePath(t_rank, t_suit);
-  // m_card_display = new TexRect(m_image_file_path, 0.0, 0.0, 0.4, 0.6);
 }
 
 char Card::getRank() const {
@@ -55,7 +53,4 @@ void Card::drawCard(float t_x, float t_y, float t_z) {
   // declare on stack, only used temporarily
   TexRect temp_card_display(this->getImageFilePath(), t_x, t_y, 0.4, 0.6);
   temp_card_display.draw(t_z);
-  // m_card_display->setX(t_x);
-  // m_card_display->setY(t_y);
-//  m_card_display->draw(t_z);
 }

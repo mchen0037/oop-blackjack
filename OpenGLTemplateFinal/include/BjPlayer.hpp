@@ -14,10 +14,6 @@ public:
 
   // Methods
   bool isHitting();
-  // void bust();
-  // void lose();
-  // void win();
-  // void push(); // tie
   void drawHand();
 
 };

@@ -1,5 +1,4 @@
 #include "BjCard.hpp"
-#include <iostream>
 
 BjCard::BjCard() {
 
@@ -50,8 +49,6 @@ BjCard::BjCard(char t_rank, char t_suit, bool t_face): Card(t_rank, t_suit, t_fa
     default:
       this->m_value = -100;
   }
-
-  // std::cout << "Created a BjCard " << this->getRank() << " " << this->getSuit() << " with value " << this->m_value << std::endl;
 }
 
 BjCard::~BjCard() {
@@ -59,6 +56,5 @@ BjCard::~BjCard() {
 }
 
 int BjCard::getValue() const {
-  // std::cout << "this->m_value: " << this->m_value << std::endl;
   return this->m_value;
 }
