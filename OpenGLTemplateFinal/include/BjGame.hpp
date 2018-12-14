@@ -23,6 +23,8 @@ public:
   void dealAdditionalCards(BjHand* t_hand);
   void play();
   void printState();
+  
+  void handleGameOver(std::string t_msg);
 
 };
 
