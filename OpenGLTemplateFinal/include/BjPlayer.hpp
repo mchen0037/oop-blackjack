@@ -18,6 +18,7 @@ public:
   // void lose();
   // void win();
   // void push(); // tie
+  void drawHand();
 
 };
 

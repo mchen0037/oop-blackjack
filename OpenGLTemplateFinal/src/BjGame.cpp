@@ -13,12 +13,13 @@ BjGame::BjGame(int argc, char** argv): GlutApp(argc, argv) {
   m_deck->shuffle();
   
   m_background = new TexRect("assets/green_board.png", -1.5, 1.5, 3, 3);
-  card1 = new TexRect("assets/cards/0c.png", -0.8, 0.9, 0.4, 0.6);
-  card2 = new TexRect("assets/cards/Qc.png", -0.8, 0.0, 0.4, 0.6);
+//  card1 = new TexRect("assets/cards/0c.png", -0.8, 0.9, 0.4, 0.6);
+//  card2 = new TexRect("assets/cards/Qc.png", -0.8, 0.0, 0.4, 0.6);
   
   m_gameEnded = false;
   m_isPlayerTurn = true;
   m_end_str = "";
+  this->play();
 }
 
 BjGame::~BjGame() {
@@ -27,8 +28,8 @@ BjGame::~BjGame() {
   delete m_deck;
   
   delete m_background;
-  delete card1;
-  delete card2;
+//  delete card1;
+//  delete card2;
 }
 
 void BjGame::dealAdditionalCards(BjHand* t_hand) {
@@ -64,7 +65,11 @@ void BjGame::play() {
   
   // hide dealer's first card
   m_dealer->flipFirstCard();
+  
+  // after hiding card, we should update GUI and then wait for key press
   this->printState();
+  redraw();
+  return;
   
   // deal additional cards to player
   // Continue asking if the player wants to hit or not or if he's busted.
@@ -132,6 +137,7 @@ void BjGame::handleGameOver(std::string t_msg) {
 }
 
 void BjGame::draw() {
+  std::cout << "CALLING DRAW" << std::endl;
   if(m_gameEnded) {
     drawText(-0.2, 0.2, m_end_str);
     drawText(-0.2, 0.1, "Play Again? y for YES / n for NO ");
@@ -145,8 +151,12 @@ void BjGame::draw() {
   drawText(0.2, -0.9, "Press s to STAND");
   m_background->draw(0.0);
 
-  card1->draw(0.10);
-  card2->draw(0.20);
+//  card1->draw(0.10);
+//  card2->draw(0.20);
+  
+  // draw dealer and player deck
+  m_dealer->drawHand();
+  m_player->drawHand();
   
   drawDeck();
 }
@@ -162,6 +172,7 @@ void BjGame::keyDown(unsigned char key, float x, float y){
   else if (key == 's'){
     
   }
+  redraw();
 }
 
 /**
