@@ -19,20 +19,20 @@ bool BjPlayer::isHitting() {
   return (ans == 'Y' || ans == 'y');
 }
 
-void BjPlayer::bust() {
-  std::cout << "Looks like you're busted.. " << std::endl;
-  lose();
-  // TODO
-}
-
-void BjPlayer::win() {
-  std::cout << this->getName() << " wins!" << std::endl;
-}
-
-void BjPlayer::lose() {
-  std::cout << this->getName() << " loses.." << std::endl;
-}
-
-void BjPlayer::push() {
-  std::cout << "PUSH!! Tie Game. "<< std::endl;
-}
+// void BjPlayer::bust() {
+//   std::cout << "Looks like you're busted.. " << std::endl;
+//   lose();
+//   // TODO
+// }
+//
+// void BjPlayer::win() {
+//   std::cout << this->getName() << " wins!" << std::endl;
+// }
+//
+// void BjPlayer::lose() {
+//   std::cout << this->getName() << " loses.." << std::endl;
+// }
+//
+// void BjPlayer::push() {
+//   std::cout << "PUSH!! Tie Game. "<< std::endl;
+// }
