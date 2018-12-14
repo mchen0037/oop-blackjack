@@ -2,14 +2,17 @@
 #include "App.h"
 
 App::App(int argc, char** argv): GlutApp(argc, argv){
-    explosion = new AnimatedRect("assets/fireball.bmp", 6, 6, 100, -0.5, 0.5, 0.5, 0.5);
+    background = new TexRect("assets/green_board.png", -1.5, 1.5, 3, 3);
+    card1 = new TexRect("assets/cards/0c.png", -0.8, 0.8, 0.4, 0.6);
+    card2 = new TexRect("assets/cards/Qc.png", -0.8, 0.0, 0.4, 0.6);
 
-    fastExplosion = new AnimatedRect("assets/fireball.bmp", 6, 6, 10, 0.5, 0.5, 0.5, 0.5);
 }
 
 void App::draw() {
-    explosion->draw(0.15);
-    fastExplosion->draw(0.15);
+    background->draw(0.0);
+    card1->draw(0.10);
+    card2->draw(0.20);
+
 }
 
 void App::keyDown(unsigned char key, float x, float y){
@@ -18,14 +21,12 @@ void App::keyDown(unsigned char key, float x, float y){
     }
 
     if (key == ' '){
-        fastExplosion->playOnce();
-        explosion->playOnce();
+//        draw();
     }
 }
 
 
 App::~App(){
     std::cout << "Exiting..." << std::endl;
-    delete explosion;
-    delete fastExplosion;
+    delete background;
 }

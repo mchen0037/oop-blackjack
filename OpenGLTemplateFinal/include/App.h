@@ -2,14 +2,13 @@
 #define App_h
 
 #include "GlutApp.h"
-#include "Shapes/AnimatedRect.h"
+#include "Shapes/TexRect.h"
 
 
 class App: public GlutApp {
-    AnimatedRect* explosion;
-    AnimatedRect* fastExplosion;
-    
-    
+    TexRect* background;
+    TexRect* card1;
+    TexRect* card2;
 public:
     App(int argc, char** argv);
     
