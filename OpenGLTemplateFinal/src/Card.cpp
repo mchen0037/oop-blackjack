@@ -1,13 +1,16 @@
 #include "Card.hpp"
-// #include <iostream>
+#include <iostream>
+#include <string>
 
 const char Card::SUITS[4] = {'c', 'd', 'h', 's'};
 const char Card::RANKS[13] = {'A', '2', '3', '4', '5', '6', '7', '8', '9', '0', 'J', 'Q', 'K'};
+const std::string Card::BACK_OF_CARD_IMAGE_PATH = "assets/cards/back.png";
 
 Card::Card() : m_rank('N'), m_suit('N'), m_face_up(false) {
 }
 
 Card::Card(char t_rank, char t_suit, bool t_face) : m_rank(t_rank), m_suit(t_suit), m_face_up(t_face) {
+  setImageFilePath(t_rank, t_suit);
 }
 
 char Card::getRank() const {
@@ -20,6 +23,10 @@ bool Card::getFace() const {
   return this->m_face_up;
 }
 
+std::string Card::getImageFilePath() const {
+  return this->m_image_file_path;
+}
+
 void Card::setRank(const char t_rank) {
   this->m_rank = t_rank;
 }
@@ -28,4 +35,11 @@ void Card::setSuit(const char t_suit) {
 }
 void Card::setFace(const bool t_face) {
   this->m_face_up = t_face;
+}
+
+void Card::setImageFilePath(char t_rank, char t_suit) {
+  m_image_file_path = "assets/cards/";
+  m_image_file_path += t_rank;
+  m_image_file_path += t_suit;
+  m_image_file_path += ".png";
 }

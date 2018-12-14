@@ -5,13 +5,8 @@ BjCard::BjCard() {
 
 }
 
-BjCard::BjCard(char t_rank, char t_suit, bool t_face) {
-  // std::cout << "Creating a BjCard with: " << t_rank << " " << t_suit << std::endl;
-  this->setRank(t_rank);
-  this->setSuit(t_suit);
-  this->setFace(t_face);
-
-  // Better way to handle this?
+BjCard::BjCard(char t_rank, char t_suit, bool t_face): Card(t_rank, t_suit, t_face) {
+  // Fine for now
   switch (t_rank) {
     case 'A':
       this->m_value = 11;
