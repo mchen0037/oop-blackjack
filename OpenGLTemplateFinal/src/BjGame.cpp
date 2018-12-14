@@ -22,9 +22,6 @@ void BjGame::dealAdditionalCards(BjHand* t_hand) {
   while (!(t_hand->isBusted()) && t_hand->isHitting()) {
     m_deck->deal(players, PER_HAND);
     this->printState();
-    if (t_hand->isBusted()) {
-      t_hand->bust();
-    }
   }
 }
 
@@ -66,20 +63,25 @@ void BjGame::play() {
     
     if (m_dealer->isBusted()) {
       // player wins
-      m_player->win();
+      this->handleGameOver("Dealer Busted. Player Wins!");
+
     }
     else {
       // compare player total to dealer total
       if (m_player->getTotal() > m_dealer->getTotal()) {
-        m_player->win();
+        this->handleGameOver("Player Wins!");
       }
       else if (m_player->getTotal() < m_dealer->getTotal()) {
-        m_player->lose();
+        this->handleGameOver("Player Loses. Dealer Wins.");
       }
       else {
-        m_player->push();
+        this->handleGameOver("PUSH!");
       }
     }
+  }
+  else {
+    // player busted
+    this->handleGameOver("Player Busted. You Lose.");
   }
   // remove everyone's cards.
   m_player->clear();
@@ -101,4 +103,9 @@ void BjGame::printState() {
   std::cout << "\t Hand: " << std::endl;
   m_deck->printHand();
 
+}
+
+
+void BjGame::handleGameOver(std::string t_msg) {
+  std::cout << t_msg << std::endl;
 }

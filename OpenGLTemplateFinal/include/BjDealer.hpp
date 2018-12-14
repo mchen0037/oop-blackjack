@@ -14,7 +14,7 @@ public:
 
   // Methods
   bool isHitting();
-  void bust();
+  // void bust();
   void flipFirstCard();
 
 
