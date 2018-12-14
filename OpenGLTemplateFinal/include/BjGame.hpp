@@ -22,6 +22,7 @@ private:
   
   bool m_gameEnded;
   bool m_isPlayerTurn;
+  std::string m_end_str;
   
 public:
   // Constructors

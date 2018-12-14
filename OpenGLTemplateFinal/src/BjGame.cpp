@@ -18,6 +18,7 @@ BjGame::BjGame(int argc, char** argv): GlutApp(argc, argv) {
   
   m_gameEnded = false;
   m_isPlayerTurn = true;
+  m_end_str = "";
 }
 
 BjGame::~BjGame() {
@@ -82,7 +83,7 @@ void BjGame::play() {
     if (m_dealer->isBusted()) {
       // player wins
       this->handleGameOver("Dealer Busted. Player Wins!");
-
+      
     }
     else {
       // compare player total to dealer total
@@ -127,11 +128,12 @@ void BjGame::printState() {
 void BjGame::handleGameOver(std::string t_msg) {
   std::cout << t_msg << std::endl;
   m_gameEnded = true;
+  m_end_str = t_msg;
 }
 
 void BjGame::draw() {
   if(m_gameEnded) {
-    drawText(-0.2, 0.2, "WINNER");
+    drawText(-0.2, 0.2, m_end_str);
     drawText(-0.2, 0.1, "Play Again? y for YES / n for NO ");
   }
   
@@ -157,7 +159,7 @@ void BjGame::keyDown(unsigned char key, float x, float y){
   if (key == 'h'){
     
   }
-  if (key == 's'){
+  else if (key == 's'){
     
   }
 }
@@ -181,8 +183,9 @@ void BjGame::drawText(float t_x, float t_y, std::string t_text) {
 
 void BjGame::drawDeck() {
   for(int i = 40; i > 0; i--) {
-    TexRect* m_deck = new TexRect("assets/cards/back.png", -1.4+(i*0.001), 0.45, 0.4, 0.6);
-    m_deck->draw(i*0.01);
+    TexRect* card = new TexRect("assets/cards/back.png", -1.4+(i*0.001), 0.45, 0.4, 0.6);
+    card->draw(i*0.01);
+    delete card;
   }
 
 }
