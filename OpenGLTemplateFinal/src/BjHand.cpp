@@ -32,6 +32,9 @@ int BjHand::getTotal() {
   bool containsAce = false;
   for (auto card: m_cards) {
     BjCard* bjCard = (BjCard*) card;
+    if (!bjCard->getFace()) {
+      continue;
+    }
     if (bjCard->getRank() == 'A') {
       containsAce = true;
       break;
