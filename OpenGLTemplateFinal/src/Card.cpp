@@ -52,8 +52,10 @@ void Card::setImageFilePath(char t_rank, char t_suit) {
 
 // draws the card onto the GUI given the x, y and z values.
 void Card::drawCard(float t_x, float t_y, float t_z) {
-  m_card_display = new TexRect(this->getImageFilePath(), t_x, t_y, 0.4, 0.6);
+  // declare on stack, only used temporarily
+  TexRect temp_card_display(this->getImageFilePath(), t_x, t_y, 0.4, 0.6);
+  temp_card_display.draw(t_z);
   // m_card_display->setX(t_x);
   // m_card_display->setY(t_y);
-  m_card_display->draw(t_z);
+//  m_card_display->draw(t_z);
 }

@@ -480,7 +480,7 @@
 				TargetAttributes = {
 					173FEF001AA63A07006CCB85 = {
 						CreatedOnToolsVersion = 6.1.1;
-						DevelopmentTeam = JZSVQ4ML6B;
+						DevelopmentTeam = L4YNAN38VT;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -635,7 +635,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JZSVQ4ML6B;
+				DEVELOPMENT_TEAM = L4YNAN38VT;
 				HEADER_SEARCH_PATHS = SOIL/includes;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -655,7 +655,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JZSVQ4ML6B;
+				DEVELOPMENT_TEAM = L4YNAN38VT;
 				HEADER_SEARCH_PATHS = SOIL/includes;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
