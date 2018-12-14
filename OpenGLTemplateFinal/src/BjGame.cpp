@@ -1,18 +1,23 @@
 #include <iostream>
+#include <string>
+#include <cstring>
+#include <stdio.h>
 #include "BjGame.hpp"
 
 BjGame::BjGame(int argc, char** argv): GlutApp(argc, argv) {
-  m_pos = -0.8;
+  m_pos_x = -0.8;
   m_player = new BjPlayer();
   m_dealer = new BjDealer();
   m_deck = new BjDeck();
   m_deck->populate();
   m_deck->shuffle();
   
-  
-  background = new TexRect("assets/green_board.png", -1.5, 1.5, 3, 3);
+  m_background = new TexRect("assets/green_board.png", -1.5, 1.5, 3, 3);
   card1 = new TexRect("assets/cards/0c.png", -0.8, 0.9, 0.4, 0.6);
   card2 = new TexRect("assets/cards/Qc.png", -0.8, 0.0, 0.4, 0.6);
+  
+  m_gameEnded = false;
+  m_isPlayerTurn = true;
 }
 
 BjGame::~BjGame() {
@@ -20,7 +25,7 @@ BjGame::~BjGame() {
   delete m_dealer;
   delete m_deck;
   
-  delete background;
+  delete m_background;
   delete card1;
   delete card2;
 }
@@ -63,6 +68,7 @@ void BjGame::play() {
   // deal additional cards to player
   // Continue asking if the player wants to hit or not or if he's busted.
   this->dealAdditionalCards(m_player);
+  m_isPlayerTurn = false;
   
   // reveal dealer's first card
   m_dealer->flipFirstCard();
@@ -120,15 +126,27 @@ void BjGame::printState() {
 
 void BjGame::handleGameOver(std::string t_msg) {
   std::cout << t_msg << std::endl;
+  m_gameEnded = true;
 }
 
 void BjGame::draw() {
+  if(m_gameEnded) {
+    drawText(-0.2, 0.2, "WINNER");
+    drawText(-0.2, 0.1, "Play Again? y for YES / n for NO ");
+  }
+  
+  drawText(0.8, 0.6, "TOTAL: " + std::to_string(m_dealer->getTotal()));
+  drawText(0.8, -0.3, "TOTAL: " + std::to_string(m_player->getTotal()));
+
+  
   drawText(-0.8, -0.9, "Press h to HIT");
   drawText(0.2, -0.9, "Press s to STAND");
-  background->draw(0.0);
+  m_background->draw(0.0);
 
   card1->draw(0.10);
   card2->draw(0.20);
+  
+  drawDeck();
 }
 
 void BjGame::keyDown(unsigned char key, float x, float y){
@@ -150,13 +168,23 @@ void BjGame::keyDown(unsigned char key, float x, float y){
  The Float parameters are taken in as x and y coordinates for where the text is displayed on the app.
  The string printed out will be from the 'strings' constant array of strings at the very top.
  */
-void BjGame::drawText(float t_x, float t_y, char* t_text) {
+void BjGame::drawText(float t_x, float t_y, std::string t_text) {
   glBegin(GL_TEXTURE);
   glRasterPos2f(t_x, t_y); // sets position of text in window
-  int length = (int)strlen(t_text);
-  for (int i = 0; i < length; i++) {
+  char* cstr = new char[t_text.length() + 1];
+  strcpy(cstr, t_text.c_str());
+  for (int i = 0; i < t_text.length(); i++) {
     // loop through characters of state string and print each out
-    glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24, t_text[i]);
+    glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24, cstr[i]);
   }
   glEnd();
 }
+
+void BjGame::drawDeck() {
+  for(int i = 40; i > 0; i--) {
+    TexRect* m_deck = new TexRect("assets/cards/back.png", -1.4+(i*0.001), 0.45, 0.4, 0.6);
+    m_deck->draw(i*0.01);
+  }
+
+}
+

@@ -13,12 +13,16 @@ private:
   BjDealer* m_dealer;
   BjDeck* m_deck;
 
-  TexRect* background;
+  TexRect* m_background;
   TexRect* card1;
   TexRect* card2;
+  TexRect* Deck;
   
-  int m_pos;
-  bool gameEnded;
+  int m_pos_x;
+  
+  bool m_gameEnded;
+  bool m_isPlayerTurn;
+  
 public:
   // Constructors
   BjGame(int argc, char** argv);
@@ -37,7 +41,8 @@ public:
   // override from glutapp
   void draw();
   void keyDown(unsigned char key, float x, float y);
-  void drawText(float, float, char*);
+  void drawText(float, float, std::string);
+  void drawDeck();
 };
 
 
