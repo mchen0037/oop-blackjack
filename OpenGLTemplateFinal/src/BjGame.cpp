@@ -171,8 +171,7 @@ void BjGame::keyDown(unsigned char key, float x, float y){
 void BjGame::drawText(float t_x, float t_y, std::string t_text) {
   glBegin(GL_TEXTURE);
   glRasterPos2f(t_x, t_y); // sets position of text in window
-  char* cstr = new char[t_text.length() + 1];
-  strcpy(cstr, t_text.c_str());
+  const char* cstr = t_text.c_str();
   for (int i = 0; i < t_text.length(); i++) {
     // loop through characters of state string and print each out
     glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24, cstr[i]);
