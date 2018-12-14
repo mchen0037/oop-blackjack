@@ -3,8 +3,8 @@
 
 App::App(int argc, char** argv): GlutApp(argc, argv){
     background = new TexRect("assets/green_board.png", -1.5, 1.5, 3, 3);
-    card1 = new TexRect("assets/cards/2s.png", -0.5, 0.5, 1, 1);
-    card2 = new TexRect("assets/cards/3s.png", -0.4, 0.5, 1, 1);
+    card1 = new TexRect("assets/cards/0c.png", -0.5, 0.5, 1, 1);
+    card2 = new TexRect("assets/cards/0c.png", -0.4, 0.5, 1, 1);
 
 }
 
