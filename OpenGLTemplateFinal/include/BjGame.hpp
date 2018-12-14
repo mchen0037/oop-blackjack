@@ -16,8 +16,9 @@ private:
   TexRect* m_background;
   TexRect* card1;
   TexRect* card2;
+  TexRect* Deck;
   
-  int m_pos;
+  int m_pos_x;
   
   bool m_gameEnded;
   bool m_isPlayerTurn;
@@ -41,6 +42,7 @@ public:
   void draw();
   void keyDown(unsigned char key, float x, float y);
   void drawText(float, float, std::string);
+  void drawDeck();
 };
 
 

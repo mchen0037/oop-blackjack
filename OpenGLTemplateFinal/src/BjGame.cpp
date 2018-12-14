@@ -5,13 +5,12 @@
 #include "BjGame.hpp"
 
 BjGame::BjGame(int argc, char** argv): GlutApp(argc, argv) {
-  m_pos = -0.8;
+  m_pos_x = -0.8;
   m_player = new BjPlayer();
   m_dealer = new BjDealer();
   m_deck = new BjDeck();
   m_deck->populate();
   m_deck->shuffle();
-  
   
   m_background = new TexRect("assets/green_board.png", -1.5, 1.5, 3, 3);
   card1 = new TexRect("assets/cards/0c.png", -0.8, 0.9, 0.4, 0.6);
@@ -19,7 +18,6 @@ BjGame::BjGame(int argc, char** argv): GlutApp(argc, argv) {
   
   m_gameEnded = false;
   m_isPlayerTurn = true;
-
 }
 
 BjGame::~BjGame() {
@@ -147,6 +145,8 @@ void BjGame::draw() {
 
   card1->draw(0.10);
   card2->draw(0.20);
+  
+  drawDeck();
 }
 
 void BjGame::keyDown(unsigned char key, float x, float y){
@@ -179,3 +179,12 @@ void BjGame::drawText(float t_x, float t_y, std::string t_text) {
   }
   glEnd();
 }
+
+void BjGame::drawDeck() {
+  for(int i = 40; i > 0; i--) {
+    TexRect* m_deck = new TexRect("assets/cards/back.png", -1.4+(i*0.001), 0.45, 0.4, 0.6);
+    m_deck->draw(i*0.01);
+  }
+
+}
+
