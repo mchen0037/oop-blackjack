@@ -13,7 +13,7 @@ std::string BjHand::getName() {
 }
 
 int BjHand::getTotal() {
-  
+
   // add up card values, treat each Ace as 1
   int sum = 0;
   for (auto card: m_cards) {
@@ -51,6 +51,6 @@ bool BjHand::isBusted() {
   return (this->getTotal() > 21) ? true : false;
 }
 
-void BjHand::bust() {
-  std::cout << "Busted." << std::endl;
-}
+// void BjHand::bust() {
+//   std::cout << "Busted." << std::endl;
+// }
