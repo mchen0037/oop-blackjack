@@ -184,8 +184,9 @@ void BjGame::drawText(float t_x, float t_y, std::string t_text) {
 
 void BjGame::drawDeck() {
   for(int i = 40; i > 0; i--) {
-    TexRect* m_deck = new TexRect("assets/cards/back.png", -1.4+(i*0.001), 0.45, 0.4, 0.6);
-    m_deck->draw(i*0.01);
+    TexRect* card = new TexRect("assets/cards/back.png", -1.4+(i*0.001), 0.45, 0.4, 0.6);
+    card->draw(i*0.01);
+    delete card;
   }
 
 }
