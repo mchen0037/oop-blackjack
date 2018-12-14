@@ -40,6 +40,9 @@ public:
   void setRank(const char t_rank);
   void setSuit(const char t_suit);
   void setFace(const bool t_face);
+  
+  // METHODS FOR DISPLAYING THE CARD ON SCREEN
+  void drawCard(float, float, float);
 
 
 };

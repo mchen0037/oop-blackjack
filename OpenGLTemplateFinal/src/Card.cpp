@@ -44,3 +44,10 @@ void Card::setImageFilePath(char t_rank, char t_suit) {
   m_image_file_path += t_suit;
   m_image_file_path += ".png";
 }
+
+// draws the card onto the GUI given the x, y and z values.
+void Card::drawCard(float t_x, float t_y, float t_z) {
+  m_card_display->setX(t_x);
+  m_card_display->setY(t_y);
+  m_card_display->draw(t_z);
+}
