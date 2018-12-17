@@ -14,7 +14,6 @@
 		E02B778621C1C28A00791E89 /* TexRect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E02B777621C1C28A00791E89 /* TexRect.cpp */; };
 		E02B778721C1C28A00791E89 /* BjHand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E02B777721C1C28A00791E89 /* BjHand.cpp */; };
 		E02B778821C1C28A00791E89 /* Deck.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E02B777821C1C28A00791E89 /* Deck.cpp */; };
-		E02B778921C1C28A00791E89 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E02B777921C1C28A00791E89 /* Timer.cpp */; };
 		E02B778A21C1C28A00791E89 /* BjGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E02B777A21C1C28A00791E89 /* BjGame.cpp */; };
 		E02B778B21C1C28A00791E89 /* GlutApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E02B777B21C1C28A00791E89 /* GlutApp.cpp */; };
 		E02B778C21C1C28A00791E89 /* BjPlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E02B777C21C1C28A00791E89 /* BjPlayer.cpp */; };
@@ -24,9 +23,7 @@
 		E02B779021C1C28A00791E89 /* BjDealer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E02B778021C1C28A00791E89 /* BjDealer.cpp */; };
 		E02B779121C1C28A00791E89 /* app_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E02B778121C1C28A00791E89 /* app_main.cpp */; };
 		E02B779221C1C28A00791E89 /* Card.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E02B778221C1C28A00791E89 /* Card.cpp */; };
-		E02B779321C1C28A00791E89 /* AnimatedRect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E02B778321C1C28A00791E89 /* AnimatedRect.cpp */; };
 		E02B779421C1C28A00791E89 /* BjDeck.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E02B778421C1C28A00791E89 /* BjDeck.cpp */; };
-		E02B779521C1C28A00791E89 /* App.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E02B778521C1C28A00791E89 /* App.cpp */; };
 		E02B77EC21C1C32500791E89 /* libSOIL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E02B77AB21C1C32400791E89 /* libSOIL.a */; };
 		E02B77ED21C1C32500791E89 /* libSOIL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E02B77AD21C1C32400791E89 /* libSOIL.a */; };
 		E02B77EE21C1C32500791E89 /* image_helper.c in Sources */ = {isa = PBXBuildFile; fileRef = E02B77AF21C1C32400791E89 /* image_helper.c */; };
@@ -57,7 +54,6 @@
 		E02B777621C1C28A00791E89 /* TexRect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TexRect.cpp; sourceTree = "<group>"; };
 		E02B777721C1C28A00791E89 /* BjHand.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BjHand.cpp; sourceTree = "<group>"; };
 		E02B777821C1C28A00791E89 /* Deck.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Deck.cpp; sourceTree = "<group>"; };
-		E02B777921C1C28A00791E89 /* Timer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Timer.cpp; sourceTree = "<group>"; };
 		E02B777A21C1C28A00791E89 /* BjGame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BjGame.cpp; sourceTree = "<group>"; };
 		E02B777B21C1C28A00791E89 /* GlutApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GlutApp.cpp; sourceTree = "<group>"; };
 		E02B777C21C1C28A00791E89 /* BjPlayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BjPlayer.cpp; sourceTree = "<group>"; };
@@ -67,17 +63,12 @@
 		E02B778021C1C28A00791E89 /* BjDealer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BjDealer.cpp; sourceTree = "<group>"; };
 		E02B778121C1C28A00791E89 /* app_main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = app_main.cpp; sourceTree = "<group>"; };
 		E02B778221C1C28A00791E89 /* Card.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Card.cpp; sourceTree = "<group>"; };
-		E02B778321C1C28A00791E89 /* AnimatedRect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AnimatedRect.cpp; sourceTree = "<group>"; };
 		E02B778421C1C28A00791E89 /* BjDeck.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BjDeck.cpp; sourceTree = "<group>"; };
-		E02B778521C1C28A00791E89 /* App.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = App.cpp; sourceTree = "<group>"; };
 		E02B779721C1C29A00791E89 /* Card.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Card.hpp; sourceTree = "<group>"; };
 		E02B779821C1C29A00791E89 /* BjDeck.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BjDeck.hpp; sourceTree = "<group>"; };
 		E02B779921C1C29A00791E89 /* Hand.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Hand.hpp; sourceTree = "<group>"; };
-		E02B779A21C1C29A00791E89 /* App.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = App.h; sourceTree = "<group>"; };
 		E02B779B21C1C29A00791E89 /* TexRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TexRect.h; sourceTree = "<group>"; };
 		E02B779C21C1C29A00791E89 /* BjDealer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BjDealer.hpp; sourceTree = "<group>"; };
-		E02B779D21C1C29A00791E89 /* Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Timer.h; sourceTree = "<group>"; };
-		E02B779E21C1C29A00791E89 /* AnimatedRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimatedRect.h; sourceTree = "<group>"; };
 		E02B779F21C1C29A00791E89 /* GlutApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlutApp.h; sourceTree = "<group>"; };
 		E02B77A021C1C29A00791E89 /* Deck.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Deck.hpp; sourceTree = "<group>"; };
 		E02B77A121C1C29A00791E89 /* Rect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rect.h; sourceTree = "<group>"; };
@@ -196,7 +187,6 @@
 				E0EE6F5821C1C92F00380347 /* Shapes */,
 				E02B777721C1C28A00791E89 /* BjHand.cpp */,
 				E02B777821C1C28A00791E89 /* Deck.cpp */,
-				E02B777921C1C28A00791E89 /* Timer.cpp */,
 				E02B777A21C1C28A00791E89 /* BjGame.cpp */,
 				E02B777B21C1C28A00791E89 /* GlutApp.cpp */,
 				E02B777C21C1C28A00791E89 /* BjPlayer.cpp */,
@@ -206,7 +196,6 @@
 				E02B778121C1C28A00791E89 /* app_main.cpp */,
 				E02B778221C1C28A00791E89 /* Card.cpp */,
 				E02B778421C1C28A00791E89 /* BjDeck.cpp */,
-				E02B778521C1C28A00791E89 /* App.cpp */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -218,9 +207,7 @@
 				E02B779721C1C29A00791E89 /* Card.hpp */,
 				E02B779821C1C29A00791E89 /* BjDeck.hpp */,
 				E02B779921C1C29A00791E89 /* Hand.hpp */,
-				E02B779A21C1C29A00791E89 /* App.h */,
 				E02B779C21C1C29A00791E89 /* BjDealer.hpp */,
-				E02B779D21C1C29A00791E89 /* Timer.h */,
 				E02B779F21C1C29A00791E89 /* GlutApp.h */,
 				E02B77A021C1C29A00791E89 /* Deck.hpp */,
 				E02B77A221C1C29A00791E89 /* BjGame.hpp */,
@@ -432,7 +419,6 @@
 		E0EE6F5821C1C92F00380347 /* Shapes */ = {
 			isa = PBXGroup;
 			children = (
-				E02B778321C1C28A00791E89 /* AnimatedRect.cpp */,
 				E02B777E21C1C28A00791E89 /* Rect.cpp */,
 				E02B777621C1C28A00791E89 /* TexRect.cpp */,
 			);
@@ -442,7 +428,6 @@
 		E0EE6F5921C1C96100380347 /* Shapes */ = {
 			isa = PBXGroup;
 			children = (
-				E02B779E21C1C29A00791E89 /* AnimatedRect.h */,
 				E02B77A121C1C29A00791E89 /* Rect.h */,
 				E02B779B21C1C29A00791E89 /* TexRect.h */,
 			);
@@ -517,15 +502,12 @@
 				E02B778A21C1C28A00791E89 /* BjGame.cpp in Sources */,
 				E02B779021C1C28A00791E89 /* BjDealer.cpp in Sources */,
 				E02B779421C1C28A00791E89 /* BjDeck.cpp in Sources */,
-				E02B779521C1C28A00791E89 /* App.cpp in Sources */,
 				E02B77F121C1C32500791E89 /* stb_image_aug.c in Sources */,
 				E02B778B21C1C28A00791E89 /* GlutApp.cpp in Sources */,
 				E02B77F021C1C32500791E89 /* SOIL.c in Sources */,
 				E02B778621C1C28A00791E89 /* TexRect.cpp in Sources */,
-				E02B778921C1C28A00791E89 /* Timer.cpp in Sources */,
 				E02B77EF21C1C32500791E89 /* image_DXT.c in Sources */,
 				E02B778C21C1C28A00791E89 /* BjPlayer.cpp in Sources */,
-				E02B779321C1C28A00791E89 /* AnimatedRect.cpp in Sources */,
 				E02B779221C1C28A00791E89 /* Card.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
