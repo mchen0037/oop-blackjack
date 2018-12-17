@@ -3,6 +3,13 @@
 
 Simple blackjack game with a GUI made using OpenGL. Featuring the best deck of cards: Angelo heads.
 
+## Screenshots
+![Alt text](/screenshots/sc1.png "Screenshot 1")
+![Alt text](/screenshots/sc2.png "Screenshot 2")
+![Alt text](/screenshots/sc3.png "Screenshot 3")
+![Alt text](/screenshots/sc4.png "Screenshot 4")
+
+
 ## Running
 ```
 git clone https://github.com/mchen0037/oop-blackjack
@@ -13,6 +20,7 @@ make
 
 ## App Structure
 ![Parts of Class Structure](https://github.com/mchen0037/oop-blackjack/blob/master/notes.png)
+Note: This was our initial design, the structure now may be a bit different.
 
 ## Card Images
 We used the png files found in this [repository](https://github.com/hayeah/playing-cards-assets). Thanks!
