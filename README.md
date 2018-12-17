@@ -11,6 +11,7 @@ Simple blackjack game with a GUI made using OpenGL. Featuring the best deck of c
 
 
 ## Running
+Note: You may have to install OpenGL and/or SOIL libraries.
 ```
 git clone https://github.com/mchen0037/oop-blackjack
 cd oop-blackjack/OpenGLTemplateFinal
